@@ -1,0 +1,37 @@
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:00 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:01 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:03 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:07 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:10 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:12 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:14 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:16 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:18 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:20 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:23 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:26 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:27 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:30 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:33 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:37 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:40 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:43 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:47 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:36:51 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:52 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:53 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:36:57 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[CORE] SMBv2 NTLMSSP Auth: src=91.240.118.20 tgt=10.0.0.6 (no prior AS-REQ)
+[CORE] [EDR-ALERT] Pass-the-Hash signature detected against 10.0.0.6.
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:00 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:37:03 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:07 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:37:08 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:37:10 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:37:11 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:13 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:15 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.0.6 - - [15/Sep/2026:18:37:18 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:21 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:25 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 91.240.118.20 - - [15/Sep/2026:18:37:29 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)

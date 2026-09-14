@@ -1,0 +1,37 @@
+[FILLER] CloudTrail [16/Sep/2026:08:36:00 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:02 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:04 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:07 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:09 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:13 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:16 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:20 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:08:36:21 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:22 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:24 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:26 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:28 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:29 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:08:36:31 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:35 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:37 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:39 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:43 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:44 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:36:48 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:36:49 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[CORE] OAuth app requested full-mailbox export scope for tenant on 10.0.0.21.
+[CORE] [CLOUD-ALERT] Mass export via OAuth token flagged for 10.0.0.21.
+[FILLER] ALB-Log [16/Sep/2026:08:36:55 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:57 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:36:58 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:37:01 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:37:05 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:37:06 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:08:37:09 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:37:10 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:37:14 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:37:16 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:37:19 +0000]: 10.0.90.63 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:08:37:23 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:08:37:26 +0000]: 10.0.90.63 TLSv1.3 200

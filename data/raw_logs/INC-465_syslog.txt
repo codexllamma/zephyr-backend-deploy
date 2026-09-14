@@ -1,0 +1,36 @@
+[FILLER] Splunk-UF [17/Sep/2026:08:48:00 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:02 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:06 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:10 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:14 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:48:15 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:48:19 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:22 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:25 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:29 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:32 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:36 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:48:39 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:40 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:48:43 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:48:47 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:48:49 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:48:52 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:48:54 +0000]: Forwarding 90 events to indexer.
+[CORE] Process Execution: powershell.exe -nop -w hidden -enc <base64> on 10.0.0.21
+[CORE] [EDR-ALERT] Malicious PowerShell under suspicious parent process on 10.0.0.21.
+[FILLER] Splunk-UF [17/Sep/2026:08:48:59 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:49:03 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:49:04 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:49:06 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:49:08 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:49:10 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:49:14 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:49:16 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:49:17 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:49:21 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:49:23 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:08:49:26 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Sysmon [17/Sep/2026:08:49:30 +0000]: Process Create: conhost.exe on 10.0.0.21
+[FILLER] Splunk-UF [17/Sep/2026:08:49:32 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:08:49:36 +0000]: Forwarding 90 events to indexer.

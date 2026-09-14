@@ -1,0 +1,41 @@
+[FILLER] ALB-Log [15/Sep/2026:03:12:00 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:12:03 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:12:04 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:12:07 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:09 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:13 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:15 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:12:16 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:12:18 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:12:22 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:23 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:25 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:12:29 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:12:33 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:37 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:40 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:42 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:43 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:12:47 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:12:48 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:12:49 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:12:50 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:12:51 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:12:54 +0000]: 10.0.97.26 TLSv1.3 200
+[CORE] HTTPS GET large payload from 10.20.1.6 - Size: 2.4GB to 10.0.97.26
+[CORE] [DLP-ALERT] Anomalous mass transfer from 10.20.1.6 to 10.0.97.26.
+[FILLER] ALB-Log [15/Sep/2026:03:12:58 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:13:02 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:13:06 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:13:08 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:13:12 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:13:14 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:13:18 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] CloudTrail [15/Sep/2026:03:13:20 +0000]: AssumeRole called by app-tier role near 10.20.1.6
+[FILLER] ALB-Log [15/Sep/2026:03:13:21 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:13:23 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:13:24 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:13:28 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:13:30 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] ALB-Log [15/Sep/2026:03:13:31 +0000]: 10.0.97.26 TLSv1.3 200
+[FILLER] CloudTrail [15/Sep/2026:03:13:33 +0000]: AssumeRole called by app-tier role near 10.20.1.6

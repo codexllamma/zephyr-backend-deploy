@@ -1,0 +1,528 @@
+Folder PATH listing for volume Windows
+Volume serial number is 64EB-A5A8
+C:.
+¦   .env
+¦   .gitignore
+¦   commands.txt
+¦   Dockerfile
+¦   requirements.txt
+¦   s.txt
+¦   server.py
+¦   structure.txt
+¦   
++---.github
+¦   +---workflows
+¦           training_loop.yml
+¦           
++---app
+¦   ¦   main.py
+¦   ¦   
+¦   +---agents
+¦   ¦   ¦   assessment.py
+¦   ¦   ¦   defense.py
+¦   ¦   ¦   executor.py
+¦   ¦   ¦   intake.py
+¦   ¦   ¦   investigator.py
+¦   ¦   ¦   judge.py
+¦   ¦   ¦   rart.py
+¦   ¦   ¦   reviewer.py
+¦   ¦   ¦   strategist.py
+¦   ¦   ¦   verifier.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           assessment.cpython-312.pyc
+¦   ¦           defense.cpython-312.pyc
+¦   ¦           executor.cpython-312.pyc
+¦   ¦           intake.cpython-312.pyc
+¦   ¦           investigator.cpython-312.pyc
+¦   ¦           judge.cpython-312.pyc
+¦   ¦           rart.cpython-312.pyc
+¦   ¦           reviewer.cpython-312.pyc
+¦   ¦           strategist.cpython-312.pyc
+¦   ¦           verifier.cpython-312.pyc
+¦   ¦           
+¦   +---core
+¦   ¦   ¦   llm.py
+¦   ¦   ¦   memory_store.py
+¦   ¦   ¦   rag.py
+¦   ¦   ¦   state.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           llm.cpython-312.pyc
+¦   ¦           memory_store.cpython-312.pyc
+¦   ¦           rag.cpython-312.pyc
+¦   ¦           state.cpython-312.pyc
+¦   ¦           
+¦   +---data
+¦   ¦   ¦   asset_inventory.json
+¦   ¦   ¦   
+¦   ¦   +---checkpoints
+¦   ¦   +---dpo_dataset
+¦   ¦   +---logs
+¦   +---graph
+¦   ¦   ¦   orchestrator.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           orchestrator.cpython-312.pyc
+¦   ¦           
+¦   +---tests
+¦   ¦   ¦   test_alert.py
+¦   ¦   ¦   test_alert_positive.py
+¦   ¦   ¦   test_prompt.py
+¦   ¦   ¦   test_supabase.py
+¦   ¦   ¦   test_workflow.py
+¦   ¦   ¦   
+¦   ¦   +---.pytest_cache
+¦   ¦   ¦   ¦   .gitignore
+¦   ¦   ¦   ¦   CACHEDIR.TAG
+¦   ¦   ¦   ¦   README.md
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---v
+¦   ¦   ¦       +---cache
+¦   ¦   ¦               lastfailed
+¦   ¦   ¦               nodeids
+¦   ¦   ¦               
+¦   ¦   +---__pycache__
+¦   ¦           test_supabase.cpython-312-pytest-9.1.1.pyc
+¦   ¦           
+¦   +---tools
+¦   ¦   ¦   mock_env.py
+¦   ¦   ¦   
+¦   ¦   +---__pycache__
+¦   ¦           mock_env.cpython-312.pyc
+¦   ¦           
+¦   +---__pycache__
+¦           main.cpython-312.pyc
+¦           
++---data
+¦   ¦   curriculum.json
+¦   ¦   zephyr_debug.log
+¦   ¦   zephyr_logs_20260913_051232.zip
+¦   ¦   
+¦   +---dpo_dataset
+¦   ¦       preferences.jsonl
+¦   ¦       
+¦   +---raw_logs
+¦   ¦       INC-001_syslog.txt
+¦   ¦       INC-002_syslog.txt
+¦   ¦       INC-003_syslog.txt
+¦   ¦       INC-004_syslog.txt
+¦   ¦       INC-005_syslog.txt
+¦   ¦       INC-006_syslog.txt
+¦   ¦       INC-007_syslog.txt
+¦   ¦       INC-008_syslog.txt
+¦   ¦       INC-009_syslog.txt
+¦   ¦       INC-010_syslog.txt
+¦   ¦       INC-011_syslog.txt
+¦   ¦       INC-012_syslog.txt
+¦   ¦       INC-013_syslog.txt
+¦   ¦       INC-014_syslog.txt
+¦   ¦       INC-015_syslog.txt
+¦   ¦       INC-016_syslog.txt
+¦   ¦       INC-017_syslog.txt
+¦   ¦       INC-018_syslog.txt
+¦   ¦       INC-019_syslog.txt
+¦   ¦       INC-020_syslog.txt
+¦   ¦       INC-021_syslog.txt
+¦   ¦       INC-022_syslog.txt
+¦   ¦       INC-023_syslog.txt
+¦   ¦       INC-024_syslog.txt
+¦   ¦       INC-025_syslog.txt
+¦   ¦       INC-026_syslog.txt
+¦   ¦       INC-027_syslog.txt
+¦   ¦       INC-028_syslog.txt
+¦   ¦       INC-029_syslog.txt
+¦   ¦       INC-030_syslog.txt
+¦   ¦       INC-031_syslog.txt
+¦   ¦       INC-032_syslog.txt
+¦   ¦       INC-033_syslog.txt
+¦   ¦       INC-034_syslog.txt
+¦   ¦       INC-035_syslog.txt
+¦   ¦       INC-036_syslog.txt
+¦   ¦       INC-037_syslog.txt
+¦   ¦       INC-038_syslog.txt
+¦   ¦       INC-039_syslog.txt
+¦   ¦       INC-040_syslog.txt
+¦   ¦       INC-041_syslog.txt
+¦   ¦       INC-042_syslog.txt
+¦   ¦       INC-043_syslog.txt
+¦   ¦       INC-044_syslog.txt
+¦   ¦       INC-045_syslog.txt
+¦   ¦       INC-046_syslog.txt
+¦   ¦       INC-047_syslog.txt
+¦   ¦       INC-048_syslog.txt
+¦   ¦       INC-049_syslog.txt
+¦   ¦       INC-050_syslog.txt
+¦   ¦       INC-051_syslog.txt
+¦   ¦       INC-052_syslog.txt
+¦   ¦       INC-053_syslog.txt
+¦   ¦       INC-054_syslog.txt
+¦   ¦       INC-055_syslog.txt
+¦   ¦       INC-056_syslog.txt
+¦   ¦       INC-057_syslog.txt
+¦   ¦       INC-058_syslog.txt
+¦   ¦       INC-059_syslog.txt
+¦   ¦       INC-060_syslog.txt
+¦   ¦       INC-061_syslog.txt
+¦   ¦       INC-062_syslog.txt
+¦   ¦       INC-063_syslog.txt
+¦   ¦       INC-064_syslog.txt
+¦   ¦       INC-065_syslog.txt
+¦   ¦       INC-066_syslog.txt
+¦   ¦       INC-067_syslog.txt
+¦   ¦       INC-068_syslog.txt
+¦   ¦       INC-069_syslog.txt
+¦   ¦       INC-070_syslog.txt
+¦   ¦       INC-071_syslog.txt
+¦   ¦       INC-072_syslog.txt
+¦   ¦       INC-073_syslog.txt
+¦   ¦       INC-074_syslog.txt
+¦   ¦       INC-075_syslog.txt
+¦   ¦       INC-076_syslog.txt
+¦   ¦       INC-077_syslog.txt
+¦   ¦       INC-078_syslog.txt
+¦   ¦       INC-079_syslog.txt
+¦   ¦       INC-080_syslog.txt
+¦   ¦       INC-081_syslog.txt
+¦   ¦       INC-082_syslog.txt
+¦   ¦       INC-083_syslog.txt
+¦   ¦       INC-084_syslog.txt
+¦   ¦       INC-085_syslog.txt
+¦   ¦       INC-086_syslog.txt
+¦   ¦       INC-087_syslog.txt
+¦   ¦       INC-088_syslog.txt
+¦   ¦       INC-089_syslog.txt
+¦   ¦       INC-090_syslog.txt
+¦   ¦       INC-091_syslog.txt
+¦   ¦       INC-092_syslog.txt
+¦   ¦       INC-093_syslog.txt
+¦   ¦       INC-094_syslog.txt
+¦   ¦       INC-095_syslog.txt
+¦   ¦       INC-096_syslog.txt
+¦   ¦       INC-097_syslog.txt
+¦   ¦       INC-098_syslog.txt
+¦   ¦       INC-099_syslog.txt
+¦   ¦       INC-100_syslog.txt
+¦   ¦       
+¦   +---training_runs
+¦       +---INC-001
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-002
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-003
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-004
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-005
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-006
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-007
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-008
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-009
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-010
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-011
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-012
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-013
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-014
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-015
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-016
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-017
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-018
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-019
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-020
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-021
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-022
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-023
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-024
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-025
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-026
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-027
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-028
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-029
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-030
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-031
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-032
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-033
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-034
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-035
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-036
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-037
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-038
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-039
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-040
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-041
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-042
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-043
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-044
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-045
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-046
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-047
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-048
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-049
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-050
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-051
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-052
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-053
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-054
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-055
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-056
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-057
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-058
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-059
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-060
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-061
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-062
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-063
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-064
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-065
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-066
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-067
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-068
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-069
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-070
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-071
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-072
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-073
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-074
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-075
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-076
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-077
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-078
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-079
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-080
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-081
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-082
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-083
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-084
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-085
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-086
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-087
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-088
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-089
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-090
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-091
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-092
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-093
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-094
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-095
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-096
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-097
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-098
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-099
+¦       ¦       telemetry.json
+¦       ¦       
+¦       +---INC-100
+¦               telemetry.json
+¦               
++---models
+¦       llama-3-8b-instruct-lora-f16-v1.gguf
+¦       llama-3.1-8B-Instruct-lora-f16-v2.gguf
+¦       Modelfile
+¦       
++---scripts
+¦   ¦   eval_run1.py
+¦   ¦   generate_dataset.py
+¦   ¦   generate_dataset2.py
+¦   ¦   run_learning.py
+¦   ¦   seed_database.py
+¦   ¦   setup_database.sql
+¦   ¦   sync_logs.py
+¦   ¦   test_single_run.py
+¦   ¦   
+¦   +---output
+¦       +---raw_logs
++---__pycache__
+        main.cpython-312.pyc
+        server.cpython-312.pyc
+        

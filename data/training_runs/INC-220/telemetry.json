@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-220",
+    "status": "COMPLETED",
+    "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+    "source_ip": "194.147.32.238",
+    "target_ip": "10.0.42.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Reset the targeted SPN service account password immediately to break the offline cracking attempt on Targeted SPN service account on 10.0.42.5",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Prevent immediate password resets on Windows Service Accounts\n[FINAL CRITICAL RULE]: Do not isolate critical batch processing infrastructure without prior failover to ensure SLA compliance",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "194.147.32.238",
+    "action_justification": "Do not isolate critical batch processing infrastructure without prior failover to ensure SLA compliance",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Mainframe COBOL Batch Processor). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "Do not isolate critical batch processing infrastructure without prior failover to ensure SLA compliance",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 194.147.32.238.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET LEGACY Mainframe Batch Job Unauthorized Modification normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 194.147.32.238 and Target: 10.0.42.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Reset the targeted SPN service account password immediately to break the offline cracking attempt on Targeted SPN service account on 10.0.42.5. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Reset the targeted SPN service account password immediately to break the offline cracking attempt' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Prevent immediate password resets on Windows Service Accounts. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 194.147.32.238. Justification: Do not isolate critical batch processing infrastructure without prior failover to ensure SLA compliance"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Mainframe COBOL Batch Processor). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+[FILLER] Okta-Log [14/Sep/2026:19:24:00 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:02 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:03 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:04 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:07 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:10 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:13 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:15 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:18 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:22 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:24 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:28 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:29 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:30 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:34 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:36 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:39 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:42 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:43 +0000]: IKEv2 SA established with 10.0.97.173
+[CORE] SSO login from 10.0.97.173 6000km from last login location, target 10.0.0.21.
+[CORE] [IDP-ALERT] Impossible-travel anomaly flagged for account on 10.0.0.21.
+[FILLER] Okta-Log [14/Sep/2026:19:24:48 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:52 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:24:56 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:24:58 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:00 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:03 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:05 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:08 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:25:12 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:13 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:14 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:18 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:20 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] Okta-Log [14/Sep/2026:19:25:23 +0000]: SUCCESS user=jdoe IP=10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:24 +0000]: IKEv2 SA established with 10.0.97.173
+[FILLER] VPN-Log [14/Sep/2026:19:25:25 +0000]: IKEv2 SA established with 10.0.97.173

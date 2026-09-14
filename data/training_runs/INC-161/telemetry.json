@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-161",
+    "status": "COMPLETED",
+    "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+    "source_ip": "89.248.165.123",
+    "target_ip": "10.0.49.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Kill the PowerShell process and quarantine the host instance from the network. on 89.248.165.123 (Source IP, Attacker)",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Restrict PowerShell process termination to prevent accidental host quarantine\n[FINAL CRITICAL RULE]: Prevent asset isolation for critical infrastructure with high availability SLA",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "89.248.165.123",
+    "action_justification": "Prevent asset isolation for critical infrastructure with high availability SLA",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Oil Pipeline Pressure Control Valve). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "Prevent asset isolation for critical infrastructure with high availability SLA",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 89.248.165.123.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET MALWARE SMBv1 Worm Propagation Attempt normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 89.248.165.123 and Target: 10.0.49.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Kill the PowerShell process and quarantine the host instance from the network. on 89.248.165.123 (Source IP, Attacker). Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network.' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Restrict PowerShell process termination to prevent accidental host quarantine. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 89.248.165.123. Justification: Prevent asset isolation for critical infrastructure with high availability SLA"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Oil Pipeline Pressure Control Valve). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

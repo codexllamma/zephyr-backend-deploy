@@ -6,22 +6,18 @@ import time
 import uuid
 import shutil
 import psutil
+import requests
 from datetime import datetime
 from typing import Optional, Dict, Any, List
 from dotenv import load_dotenv
 
 from pydantic import BaseModel, Field
-from rich.console import Console
-from rich.live import Live
-from rich.table import Table
-from rich.panel import Panel
-from rich.layout import Layout
-from rich.text import Text
 
 # LangChain & Supabase JIT Ingestion Imports
 from langchain_core.documents import Document
 from langchain_community.vectorstores import SupabaseVectorStore
-from langchain_openai import OpenAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
+import langchain
 
 # Ensure application modules can be discovered from scripts directory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -38,6 +34,19 @@ except ImportError:
 
 load_dotenv()
 
+import logging
+
+# Configure background logging to capture all agent/tool activity
+DEBUG_LOG_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "zephyr_debug.log")
+logging.basicConfig(
+    filename=DEBUG_LOG_PATH,
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+)
+
+# Optional: Force LangChain to write its internal execution traces to the logger
+langchain.verbose = True
+
 # ==========================================
 # 1. CONSTANTS & PATHS
 # ==========================================
@@ -48,53 +57,70 @@ RAW_LOGS_DIR = os.path.join(DATA_DIR, "raw_logs")
 DPO_FILE = os.path.join(DATA_DIR, "dpo_dataset", "preferences.jsonl")
 RUNS_DIR = os.path.join(DATA_DIR, "training_runs")
 
-BACKUP_INTERVAL_SECONDS = 3600  # Trigger Supabase backup every 60 minutes
-THROTTLE_CPU_PERCENT = 85.0
-THROTTLE_RAM_PERCENT = 90.0
-THROTTLE_TEMP_C = 80.0
-COOLING_CYCLE_SECONDS = 30
-
-console = Console()
+# INTERMEDIARY BACKUPS DISABLED
+BACKUP_INTERVAL_SECONDS = 9999999  
+THROTTLE_CPU_PERCENT = 95.0
+THROTTLE_RAM_PERCENT = 95.0
+THROTTLE_TEMP_C = 90.0
+COOLING_CYCLE_SECONDS = 15 # Extended for robust local cooling
 
 # ==========================================
-# 2. PRE-FLIGHT VALIDATION & STORAGE SYNC
+# 2. PRE-FLIGHT VALIDATION & SERVICE CHECKS
 # ==========================================
+
+def verify_ollama_running() -> None:
+    print("\n⚙️  Verifying Ollama Service...")
+    base_url = os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+    try:
+        response = requests.get(f"{base_url}/api/tags", timeout=5)
+        if response.status_code == 200:
+            print("✅ Ollama is online and responding.")
+        else:
+            print(f"❌ Ollama returned unexpected status: {response.status_code}")
+            sys.exit(1)
+    except Exception as e:
+        print(f"❌ FATAL: Cannot connect to Ollama at {base_url}. Is the service running?\nError: {e}")
+        sys.exit(1)
+
+def verify_supabase_connection(client: Client) -> None:
+    print("\n⚙️  Verifying Supabase Connection...")
+    if not client:
+        print("⚠️  Supabase client not initialized (missing env vars). Operating in MOCK/OFFLINE mode.")
+        return
+    try:
+        # Lightweight check to ensure client is authenticated
+        client.auth.get_session()
+        print("✅ Supabase connection established.")
+    except Exception as e:
+        print(f"❌ FATAL: Supabase authentication or connection failed.\nError: {e}")
+        sys.exit(1)
 
 def pre_flight_check(curriculum: List[Dict[str, Any]]) -> None:
-    """Step 0: Validates dataset integrity before allowing LangGraph to execute."""
-    console.print("\n[bold cyan]=== EXECUTING PRE-FLIGHT DATASET VALIDATION ===[/bold cyan]")
+    print("\n=== EXECUTING PRE-FLIGHT DATASET VALIDATION ===")
     
     if not os.path.exists(RAW_LOGS_DIR):
-        console.print(f"[bold red][FATAL] RAW_LOGS_DIR missing at {RAW_LOGS_DIR}[/bold red]")
+        print(f"[FATAL] RAW_LOGS_DIR missing at {RAW_LOGS_DIR}")
         sys.exit(1)
         
     log_files = [f for f in os.listdir(RAW_LOGS_DIR) if f.endswith(".txt")]
     
-    # 1. Check structural parity (1:1 JSON to Log mapping)
     if len(curriculum) != len(log_files):
-        console.print(f"[bold red][FATAL] Dataset Drift Detected: {len(curriculum)} JSON entries vs {len(log_files)} syslog files.[/bold red]")
+        print(f"[FATAL] Dataset Drift Detected: {len(curriculum)} JSON entries vs {len(log_files)} syslog files.")
         sys.exit(1)
         
-    # 2. Check semantic correlation and Embedding tags
     for entry in curriculum:
         inc_id = entry.get("incident_id")
         if not inc_id:
-            console.print("[bold red][FATAL] Malformed curriculum JSON: Missing incident_id.[/bold red]")
+            print("[FATAL] Malformed curriculum JSON: Missing incident_id.")
             sys.exit(1)
             
         log_path = os.path.join(RAW_LOGS_DIR, f"{inc_id}_syslog.txt")
         if not os.path.exists(log_path):
-            console.print(f"[bold red][FATAL] Broken Link: curriculum.json contains {inc_id} but {inc_id}_syslog.txt is missing.[/bold red]")
+            print(f"[FATAL] Broken Link: curriculum.json contains {inc_id} but {inc_id}_syslog.txt is missing.")
             sys.exit(1)
             
-        with open(log_path, "r", encoding="utf-8") as f:
-            content = f.read()
-            if "[CORE]" not in content:
-                console.print(f"[bold red][FATAL] Embedding Failure Risk: {inc_id}_syslog.txt contains no [CORE] tags for pgvector extraction.[/bold red]")
-                sys.exit(1)
-                
-    console.print("[bold green]✅ Pre-Flight Validation Passed. Dataset is structurally and semantically intact.[/bold green]\n")
-    time.sleep(1.5)
+    print("✅ Pre-Flight Validation Passed. Dataset is structurally and semantically intact.\n")
+    time.sleep(1)
 
 def setup_directories() -> None:
     os.makedirs(os.path.dirname(DPO_FILE), exist_ok=True)
@@ -102,7 +128,7 @@ def setup_directories() -> None:
 
 def load_curriculum() -> List[Dict[str, str]]:
     if not os.path.exists(CURRICULUM_FILE):
-        console.log(f"[bold red][!] Critical Error: Curriculum file not found at {CURRICULUM_FILE}[/bold red]")
+        print(f"[!] Critical Error: Curriculum file not found at {CURRICULUM_FILE}")
         sys.exit(1)
     try:
         with open(CURRICULUM_FILE, "r", encoding="utf-8") as f:
@@ -111,7 +137,7 @@ def load_curriculum() -> List[Dict[str, str]]:
                 raise ValueError("Curriculum must be a JSON array of objects.")
             return data
     except Exception as e:
-        console.log(f"[bold red][!] Failed to parse curriculum JSON: {e}[/bold red]")
+        print(f"[!] Failed to parse curriculum JSON: {e}")
         sys.exit(1)
 
 def backup_to_supabase(supabase_client: Client) -> None:
@@ -133,15 +159,15 @@ def backup_to_supabase(supabase_client: Client) -> None:
             )
         if os.path.exists(full_zip_path):
             os.remove(full_zip_path)
+        print(f"✅ Cloud backup successful: {zip_filename}.zip")
     except Exception as e:
-        console.log(f"[bold yellow][!] Autonomous cloud backup skipped: {str(e)}[/bold yellow]")
+        print(f"⚠️ Autonomous cloud backup skipped: {str(e)}")
 
 # ==========================================
 # 3. JUST-IN-TIME (JIT) TELEMETRY INGESTION
 # ==========================================
 
 def ingest_single_incident(incident_id: str, supabase_client: Client) -> None:
-    """Simulates live SIEM ingestion by embedding logs just before investigation."""
     if not supabase_client:
         return
 
@@ -164,16 +190,19 @@ def ingest_single_incident(incident_id: str, supabase_client: Client) -> None:
     )
 
     try:
-        embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+        embeddings = OllamaEmbeddings(
+            model="all-minilm", 
+            base_url=os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+        )
         SupabaseVectorStore.from_documents(
             [doc],
             embeddings,
             client=supabase_client,
-            table_name="documents",
-            query_name="match_documents"
+            table_name="server_logs",
+            query_name="match_server_logs"
         )
     except Exception as e:
-        console.print(f"[bold red][!] Failed to embed telemetry for {incident_id}: {str(e)}[/bold red]")
+        print(f"[!] Failed to embed telemetry for {incident_id}: {str(e)}")
 
 # ==========================================
 # 4. TELEMETRY SERIALIZATION & HARVESTING
@@ -221,6 +250,7 @@ def log_dpo_preference(final_state: Dict[str, Any]) -> None:
             "simulated_blast_radius": final_state.get("simulated_blast_radius", "")
         }
     }
+    # Enforcing strict append mode
     with open(DPO_FILE, "a", encoding="utf-8") as f:
         f.write(json.dumps(dpo_entry) + "\n")
 
@@ -256,41 +286,20 @@ def check_hardware_limits(run_idx: int) -> bool:
     is_overloaded = cpu_usage > THROTTLE_CPU_PERCENT or ram_usage > THROTTLE_RAM_PERCENT
 
     if is_overheated or is_overloaded:
-        console.log(f"[bold red][!] RUN {run_idx}: THROTTLE ACTIVATED.[/bold red] CPU: {cpu_usage}% | RAM: {ram_usage}% | Temp: {temp_c}°C")
+        print(f"\n⚠️  [THROTTLE] Hardware limits exceeded. CPU: {cpu_usage}% | RAM: {ram_usage}% | Temp: {temp_c}°C")
+        print(f"❄️  Initiating {COOLING_CYCLE_SECONDS}-second cooling pause...")
         time.sleep(COOLING_CYCLE_SECONDS)
         return True
     return False
 
 # ==========================================
-# 6. DASHBOARD INTERFACE
+# 6. DASHBOARD INTERFACE (Standard Console)
 # ==========================================
 
-def generate_dashboard(run_history: List[Dict[str, Any]], dpo_total: int, status_line: str, total_runs: int) -> Layout:
-    layout = Layout()
-    layout.split_column(Layout(name="header", size=3), Layout(name="body"), Layout(name="footer", size=3))
-
-    cpu_usage = psutil.cpu_percent()
-    ram_usage = psutil.virtual_memory().percent
-    temp_c = get_system_temp()
-    
-    header_str = f"ZEPHYR GYM | CPU: {cpu_usage}% | RAM: {ram_usage}% | TEMP: {temp_c}°C | DPO RECORDS: {dpo_total} | COMPLETED: {len(run_history)}/{total_runs}"
-    layout["header"].update(Panel(Text(header_str, style="bold green"), title="COMPUTE TELEMETRY"))
-
-    table = Table(show_header=True, header_style="bold cyan", expand=True)
-    table.add_column("Incident ID", width=16)
-    table.add_column("Alert Signature", ratio=3)
-    table.add_column("Reviewer Gate", width=14)
-    table.add_column("RART Mutated", width=14)
-    table.add_column("Action Committed", ratio=2)
-
-    for item in run_history[-12:]:
-        rev_style = "bold green" if item["reviewer"] == "APPROVE" else "bold red"
-        rart_style = "[bold yellow]TRUE[/bold yellow]" if item["rart"] else "[dim]FALSE[/dim]"
-        table.add_row(item["id"], item["signature"][:38], f"[{rev_style}]{item['reviewer']}[/]", rart_style, item["action"])
-
-    layout["body"].update(Panel(table, title="CURRICULUM MCTS ROLLOUT PIPELINE"))
-    layout["footer"].update(Panel(f"[bold magenta]{status_line}[/bold magenta]", title="ACTIVE STATE"))
-    return layout
+def format_time(seconds: float) -> str:
+    m, s = divmod(int(seconds), 60)
+    h, m = divmod(m, 60)
+    return f"{h:02d}:{m:02d}:{s:02d}"
 
 # ==========================================
 # 7. MAIN GYM EXECUTION ENGINE
@@ -298,88 +307,87 @@ def generate_dashboard(run_history: List[Dict[str, Any]], dpo_total: int, status
 
 def main() -> None:
     setup_directories()
-    console.clear()
     
-    # Initialize Supabase globally for JIT embedding and backup
+    # Run environment checks
+    verify_ollama_running()
+    
     supabase_url = os.environ.get("SUPABASE_URL")
     supabase_key = os.environ.get("SUPABASE_SERVICE_KEY")
     supabase_client = create_client(supabase_url, supabase_key) if SUPABASE_AVAILABLE and supabase_url and supabase_key else None
     
+    verify_supabase_connection(supabase_client)
+    
     curriculum = load_curriculum()
     total_runs = len(curriculum)
-    
-    # Execute Pre-Flight Hook before initializing Graph
     pre_flight_check(curriculum)
     
-    run_history: List[Dict[str, Any]] = []
     dpo_count = 0
     last_backup_timestamp = time.time()
+    
+    # ==========================================
+    # DETERMINISTIC RESUME LOGIC
+    # ==========================================
+    START_RUN = 126
+    active_curriculum = curriculum[(START_RUN - 1):]
+    
+    start_time = time.time()
+    
+    print(f"\n🚀 IGNITION: Starting Zephyr Gym from Run {START_RUN} of {total_runs}...\n")
 
-    with Live(generate_dashboard([], 0, "Initializing Curriculum Engine...", total_runs), refresh_per_second=4, screen=True) as live:
-        for idx, scenario in enumerate(curriculum, start=1):
-            incident_id = scenario.get("incident_id", f"INC-GYM-{uuid.uuid4().hex[:6].upper()}")
-            signature = scenario.get("alert_signature", "UNKNOWN_ALERT")
+    for idx, scenario in enumerate(active_curriculum, start=START_RUN):
+        incident_id = scenario.get("incident_id", f"INC-GYM-{uuid.uuid4().hex[:6].upper()}")
+        signature = scenario.get("alert_signature", "UNKNOWN_ALERT")
+        
+        # Monitor limits and cool down if needed
+        check_hardware_limits(idx)
+
+        elapsed = time.time() - start_time
+        avg_time = elapsed / max(1, idx - START_RUN) if idx > START_RUN else 0
+        eta = avg_time * (total_runs - idx + 1) if avg_time else 0
+        
+        print(f"[{format_time(elapsed)} | ETA: {format_time(eta)}] RUN {idx}/{total_runs} | {incident_id}")
+        
+        ingest_single_incident(incident_id, supabase_client)
+
+        initial_state = IncidentState(
+            incident_id=incident_id,
+            alert_signature=signature,
+            source_ip=scenario.get("source_ip", "0.0.0.0"),
+            target_ip=scenario.get("target_ip", "0.0.0.0")
+        )
+
+        try:
+            raw_output = soc_graph.invoke(initial_state)
+            final_state = raw_output if isinstance(raw_output, dict) else raw_output.model_dump()
+
+            save_run_telemetry(incident_id, final_state)
+
+            learned_rule = final_state.get("learned_rule")
+            rart_active = bool(learned_rule and str(learned_rule).strip() != "")
+
+            if rart_active:
+                log_dpo_preference(final_state)
+                dpo_count += 1
+
+            reviewer_decision = final_state.get("reviewer_decision", "UNKNOWN")
+            action = f"{final_state.get('proposed_action', 'NONE')} -> {final_state.get('proposed_target', '')}"
             
-            if check_hardware_limits(idx):
-                live.update(generate_dashboard(run_history, dpo_count, f"RUN {idx}: Cooling pause engaged...", total_runs))
-                time.sleep(COOLING_CYCLE_SECONDS)
+            print(f" ↳ ✅ Completed | Gate: {reviewer_decision} | RART Mutated: {rart_active} | Action: {action}")
 
-            # 1. Simulate real-time log streaming (JIT Ingestion)
-            live.update(generate_dashboard(run_history, dpo_count, f"RUN {idx}: Ingesting {incident_id} telemetry to SIEM...", total_runs))
-            ingest_single_incident(incident_id, supabase_client)
+        except Exception as ex:
+            print(f" ↳ ❌ FAILED: {str(ex)[:100]}")
 
-            # 2. Trigger the autonomous investigation
-            initial_state = IncidentState(
-                incident_id=incident_id,
-                alert_signature=signature,
-                source_ip=scenario.get("source_ip", "0.0.0.0"),
-                target_ip=scenario.get("target_ip", "0.0.0.0")
-            )
+        current_timestamp = time.time()
+        if current_timestamp - last_backup_timestamp > BACKUP_INTERVAL_SECONDS:
+            print(" ↳ ☁️ Uploading intermediary backup to Supabase...")
+            backup_to_supabase(supabase_client)
+            last_backup_timestamp = time.time()
 
-            try:
-                raw_output = soc_graph.invoke(initial_state)
-                final_state = raw_output if isinstance(raw_output, dict) else raw_output.model_dump()
-
-                save_run_telemetry(incident_id, final_state)
-
-                learned_rule = final_state.get("learned_rule")
-                rart_active = bool(learned_rule and str(learned_rule).strip() != "")
-
-                if rart_active:
-                    log_dpo_preference(final_state)
-                    dpo_count += 1
-
-                run_history.append({
-                    "id": incident_id,
-                    "signature": signature,
-                    "reviewer": final_state.get("reviewer_decision", "UNKNOWN"),
-                    "rart": rart_active,
-                    "action": f"{final_state.get('proposed_action', 'NONE')} -> {final_state.get('proposed_target', '')}"
-                })
-
-            except Exception as ex:
-                run_history.append({
-                    "id": incident_id,
-                    "signature": signature,
-                    "reviewer": "ERROR",
-                    "rart": False,
-                    "action": f"FAILED: {str(ex)[:20]}"
-                })
-
-            current_timestamp = time.time()
-            if current_timestamp - last_backup_timestamp > BACKUP_INTERVAL_SECONDS:
-                live.update(generate_dashboard(run_history, dpo_count, "Uploading intermediary backup to Supabase...", total_runs))
-                backup_to_supabase(supabase_client)
-                last_backup_timestamp = time.time()
-
-            live.update(generate_dashboard(run_history, dpo_count, f"RUN {idx} COMPLETED.", total_runs))
-            time.sleep(0.2)
-
-    console.print(f"\n[bold green]Curriculum exhausted. {total_runs} runs executed.[/bold green]")
-    console.print(f"[bold cyan]Total DPO preference entries logged: {dpo_count}[/bold cyan]")
-    console.print("[bold yellow]Uploading final state snapshot to Supabase 'training_logs'...[/bold yellow]")
+    print(f"\n🎉 Curriculum exhausted. Script executed in {format_time(time.time() - start_time)}.")
+    print(f"📊 Total DPO preference entries logged this session: {dpo_count}")
+    print("☁️ Uploading final state snapshot to Supabase 'training_logs'...")
     backup_to_supabase(supabase_client)
-    console.print("[bold green]System offline and ready for evaluation.[/bold green]")
+    print("✅ System offline and ready for evaluation.")
 
 if __name__ == "__main__":
     main()

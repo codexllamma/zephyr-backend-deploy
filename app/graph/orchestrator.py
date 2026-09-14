@@ -42,10 +42,21 @@ def route_strategist(state: IncidentState) -> Literal["tools", "assessor"]:
 def route_reviewer(state: IncidentState) -> Literal["executor", "rart"]:
     """
     The Near-Miss Gatekeeper.
-    Evaluates the Reviewer's simulation decision.
+    Evaluates the Reviewer's simulation decision with a deterministic hardware tripwire.
     APPROVE -> Route to Production Execution.
     REJECT -> Route to RART for Policy Mutation.
     """
+    # Protect against None types if the LLM completely skipped the fields
+    feedback = state.reviewer_feedback or ""
+    blast_radius = state.simulated_blast_radius or ""
+    
+    # 1. HARD OVERRIDE (The Tripwire)
+    # If the simulation tool explicitly rejected the action, bypass the LLM's hallucinated approval.
+    if "[REJECTED]" in feedback or "[REJECTED]" in blast_radius:
+        logger.warning(f"[{state.incident_id}] Graph Routing: Tripwire activated! Overriding hallucinated APPROVE -> RART")
+        return "rart"
+
+    # 2. Standard LLM Fallback
     if state.reviewer_decision == "APPROVE":
         logger.info(f"[{state.incident_id}] Graph Routing: Reviewer -> Executor (Plan Approved)")
         return "executor"

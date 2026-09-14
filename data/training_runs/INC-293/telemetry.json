@@ -1,0 +1,104 @@
+{
+    "incident_id": "INC-293",
+    "status": "COMPLETED",
+    "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+    "source_ip": "10.0.91.133",
+    "target_ip": "10.0.0.21",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration. on Target IP (Victim): 10.0.0.21",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Prevent data exfiltration from internal backend servers by denying non-authorised remote access\n[NEW CRITICAL RULE JUST LEARNED]: Any traffic from a CSP infrastructure to the internal network must be explicitly whitelisted and approved by the security team\n[NEW CRITICAL RULE JUST LEARNED]: Implementing Standard Playbook and Critical Override on Class C IP addresses is not allowed without manual review\n[NEW CRITICAL RULE JUST LEARNED]: Disallow targeted access to sensitive infrastructure from unknown sources\n[NEW CRITICAL RULE JUST LEARNED]: Restrict critical override actions on 10.0.x.x network segment\n[FINAL CRITICAL RULE]: Do not attempt to isolate SQL clusters without first implementing failover procedures to ensure high availability.",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "10.0.91.133",
+    "action_justification": "Do not attempt to isolate SQL clusters without first implementing failover procedures to ensure high availability.",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Production SQL Cluster). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "Do not attempt to isolate SQL clusters without first implementing failover procedures to ensure high availability.",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 10.0.91.133.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 10.0.91.133 and Target: 10.0.0.21."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration. on Target IP (Victim): 10.0.0.21. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration.' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Prevent data exfiltration from internal backend servers by denying non-authorised remote access. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 10.0.91.133. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: SIMULATOR_CRASH"
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Any traffic from a CSP infrastructure to the internal network must be explicitly whitelisted and approved by the security team. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Implement Phase 1 (Standard Playbook) and Phase 2 (Past Mistakes - Critical Override) on 10.0.91.133. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Implement Phase 1 (Standard Playbook) and Phase 2 (Past Mistakes - Critical Override)' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Implementing Standard Playbook and Critical Override on Class C IP addresses is not allowed without manual review. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 10.0.91.133. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: SIMULATOR_CRASH"
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Disallow targeted access to sensitive infrastructure from unknown sources. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Implement PHASE 1 (STANDARD PLAYBOOK) and PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE) on 10.0.0.21. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Implement PHASE 1 (STANDARD PLAYBOOK) and PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE)' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Restrict critical override actions on 10.0.x.x network segment. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 10.0.91.133. Justification: Do not attempt to isolate SQL clusters without first implementing failover procedures to ensure high availability."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Production SQL Cluster). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

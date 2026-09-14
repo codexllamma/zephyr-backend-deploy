@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-300",
+    "status": "COMPLETED",
+    "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+    "source_ip": "194.147.32.232",
+    "target_ip": "10.0.63.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Kill the PowerShell process and quarantine the host instance from the network. on 194.147.32.232",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Untrusted IIS servers are not allowed to execute process termination actions.\n[FINAL CRITICAL RULE]: Prevent Unrestricted PowerShell Execution",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "194.147.32.232",
+    "action_justification": "Prevent Unrestricted PowerShell Execution",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network.' is invalid.",
+    "learned_rule": "Prevent Unrestricted PowerShell Execution",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 194.147.32.232.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET MALWARE SMBv1 Worm Propagation Attempt normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 194.147.32.232 and Target: 10.0.63.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Kill the PowerShell process and quarantine the host instance from the network. on 194.147.32.232. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network.' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Untrusted IIS servers are not allowed to execute process termination actions.. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 194.147.32.232. Justification: Prevent Unrestricted PowerShell Execution"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network.' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

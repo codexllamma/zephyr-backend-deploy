@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-186",
+    "status": "COMPLETED",
+    "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+    "source_ip": "194.147.32.58",
+    "target_ip": "10.0.42.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Kill the PowerShell process and quarantine the host instance from the network on 194.147.32.58 (Source IP, Attacker)",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Disallow process termination on Windows Remote Desktop Infrastructure\n[FINAL CRITICAL RULE]: No actions that compromise availability SLA shall be taken against Mainframes without prior failover",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "194.147.32.58",
+    "action_justification": "No actions that compromise availability SLA shall be taken against Mainframes without prior failover",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Mainframe COBOL Batch Processor). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "No actions that compromise availability SLA shall be taken against Mainframes without prior failover",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 194.147.32.58.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET TROJAN Ransomware Extension Rename (.blackcat) normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 194.147.32.58 and Target: 10.0.42.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Kill the PowerShell process and quarantine the host instance from the network on 194.147.32.58 (Source IP, Attacker). Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Disallow process termination on Windows Remote Desktop Infrastructure. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 194.147.32.58. Justification: No actions that compromise availability SLA shall be taken against Mainframes without prior failover"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Mainframe COBOL Batch Processor). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-227",
+    "status": "COMPLETED",
+    "alert_signature": "ET MALWARE Avionics Interface Anomalous Write",
+    "source_ip": "91.240.118.162",
+    "target_ip": "10.0.37.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Kill the PowerShell process and quarantine the host instance from the network on 91.240.118.162 (Source IP, Attacker)",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Prevent lateral movement by restricting process termination and network isolation to authorized personnel only\n[FINAL CRITICAL RULE]: No network isolation of Tier 1 air traffic control radar feeds, except in case of catastrophic failure. In such cases, a failover to secondary systems must be initiated before isolation.",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "91.240.118.162",
+    "action_justification": "No network isolation of Tier 1 air traffic control radar feeds, except in case of catastrophic failure. In such cases, a failover to secondary systems must be initiated before isolation.",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Air Traffic Control Radar Feed). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "No network isolation of Tier 1 air traffic control radar feeds, except in case of catastrophic failure. In such cases, a failover to secondary systems must be initiated before isolation.",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 91.240.118.162.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET MALWARE Avionics Interface Anomalous Write normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 91.240.118.162 and Target: 10.0.37.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Kill the PowerShell process and quarantine the host instance from the network on 91.240.118.162 (Source IP, Attacker). Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Prevent lateral movement by restricting process termination and network isolation to authorized personnel only. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 91.240.118.162. Justification: No network isolation of Tier 1 air traffic control radar feeds, except in case of catastrophic failure. In such cases, a failover to secondary systems must be initiated before isolation."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Air Traffic Control Radar Feed). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

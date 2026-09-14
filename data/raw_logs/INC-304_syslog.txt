@@ -1,0 +1,41 @@
+[FILLER] VPN-Log [16/Sep/2026:00:36:00 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:04 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:08 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:09 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:10 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:13 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:15 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:16 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:18 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:19 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:20 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:22 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:24 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:25 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:28 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:30 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:34 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:36 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:38 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:39 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:40 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:43 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:45 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:46 +0000]: IKEv2 SA established with 77.83.36.154
+[CORE] Auth Failure burst: 80+ attempts src=77.83.36.154 against 10.0.60.25 in 45s
+[CORE] [IDP-ALERT] Credential stuffing pattern detected from 77.83.36.154.
+[FILLER] VPN-Log [16/Sep/2026:00:36:53 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:36:55 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:36:58 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:00 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:04 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:07 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:37:08 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:37:12 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:37:14 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:18 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:37:20 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:24 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] Okta-Log [16/Sep/2026:00:37:28 +0000]: SUCCESS user=jdoe IP=77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:32 +0000]: IKEv2 SA established with 77.83.36.154
+[FILLER] VPN-Log [16/Sep/2026:00:37:35 +0000]: IKEv2 SA established with 77.83.36.154

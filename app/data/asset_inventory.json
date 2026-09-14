@@ -788,5 +788,275 @@
         "asset_name": "Zephyr SOC Phase 2 RAG DB",
         "criticality_tier": 1,
         "business_function": "Auto-Registered Zephyr SOC Phase 2 RAG DB"
+    },
+    "10.0.64.15": {
+        "asset_name": "Interns' Shared Drive",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Interns' Shared Drive"
+    },
+    "10.0.0.21": {
+        "asset_name": "Production SQL Cluster",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Production SQL Cluster"
+    },
+    "10.0.36.15": {
+        "asset_name": "Insulin Pump Telemetry Gateway",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Insulin Pump Telemetry Gateway"
+    },
+    "10.0.62.15": {
+        "asset_name": "Dev Sandbox Cluster",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Dev Sandbox Cluster"
+    },
+    "10.0.65.5": {
+        "asset_name": "Non-Prod Load Testing Environment",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Non-Prod Load Testing Environment"
+    },
+    "10.20.1.6": {
+        "asset_name": "Payment Gateway Server",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Payment Gateway Server"
+    },
+    "10.0.43.5": {
+        "asset_name": "Blockchain Validator Node (Consensus Layer)",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Blockchain Validator Node (Consensus Layer)"
+    },
+    "10.0.63.5": {
+        "asset_name": "Cafeteria Payment Kiosk",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Cafeteria Payment Kiosk"
+    },
+    "10.0.44.6": {
+        "asset_name": "AI Training Cluster (Model Weights Store)",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered AI Training Cluster (Model Weights Store)"
+    },
+    "10.0.70.35": {
+        "asset_name": "k6 Load Testing Runner",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered k6 Load Testing Runner"
+    },
+    "10.0.39.15": {
+        "asset_name": "GPS Timing Reference (Stratum-0)",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered GPS Timing Reference (Stratum-0)"
+    },
+    "10.0.42.5": {
+        "asset_name": "Mainframe COBOL Batch Processor",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Mainframe COBOL Batch Processor"
+    },
+    "10.0.70.55": {
+        "asset_name": "Backup Replication Job Runner",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Backup Replication Job Runner"
+    },
+    "10.0.60.5": {
+        "asset_name": "Internal Wiki Server",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Internal Wiki Server"
+    },
+    "10.10.5.56": {
+        "asset_name": "SRE Chaos Engineering Suite",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered SRE Chaos Engineering Suite"
+    },
+    "10.0.70.16": {
+        "asset_name": "RMM Patch Management Agent",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered RMM Patch Management Agent"
+    },
+    "10.0.30.6": {
+        "asset_name": "Immutable Backup Vault (WORM Storage)",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Immutable Backup Vault (WORM Storage)"
+    },
+    "10.0.66.5": {
+        "asset_name": "Parking Garage Gate Sensor",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Parking Garage Gate Sensor"
+    },
+    "10.0.62.5": {
+        "asset_name": "QA Test Database",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered QA Test Database"
+    },
+    "10.0.0.6": {
+        "asset_name": "Primary Domain Controller",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Primary Domain Controller"
+    },
+    "10.0.70.65": {
+        "asset_name": "Vulnerability Management Agent (Tenable)",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Vulnerability Management Agent (Tenable)"
+    },
+    "10.0.38.15": {
+        "asset_name": "Subsea Cable Landing Station",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Subsea Cable Landing Station"
+    },
+    "198.51.100.56": {
+        "asset_name": "Authorized Pentest Firm",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Authorized Pentest Firm"
+    },
+    "10.0.64.5": {
+        "asset_name": "npm Registry Mirror",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered npm Registry Mirror"
+    },
+    "10.0.48.5": {
+        "asset_name": "Nuclear Plant Non-Safety Instrumentation Bus",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Nuclear Plant Non-Safety Instrumentation Bus"
+    },
+    "10.0.66.15": {
+        "asset_name": "Digital Signage Player (Lobby)",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Digital Signage Player (Lobby)"
+    },
+    "10.0.70.25": {
+        "asset_name": "HR Background Check API Gateway",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered HR Background Check API Gateway"
+    },
+    "10.0.70.5": {
+        "asset_name": "Compliance Auditor Scanner",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Compliance Auditor Scanner"
+    },
+    "10.0.34.5": {
+        "asset_name": "Election Tabulation Server",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Election Tabulation Server"
+    },
+    "10.100.0.6": {
+        "asset_name": "Internal Qualys Scanner",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Internal Qualys Scanner"
+    },
+    "10.0.49.5": {
+        "asset_name": "Oil Pipeline Pressure Control Valve",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Oil Pipeline Pressure Control Valve"
+    },
+    "10.0.36.25": {
+        "asset_name": "Cold Chain Vaccine Freezer Monitor",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Cold Chain Vaccine Freezer Monitor"
+    },
+    "10.0.47.5": {
+        "asset_name": "Seismic Early-Warning Sensor Hub",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Seismic Early-Warning Sensor Hub"
+    },
+    "10.0.60.25": {
+        "asset_name": "Print Server (Floor 4)",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Print Server (Floor 4)"
+    },
+    "10.0.37.5": {
+        "asset_name": "Air Traffic Control Radar Feed",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Air Traffic Control Radar Feed"
+    },
+    "10.0.63.15": {
+        "asset_name": "Retired Legacy Intranet App",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Retired Legacy Intranet App"
+    },
+    "10.0.31.20": {
+        "asset_name": "Municipal Water Chlorine Dosing Controller",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Municipal Water Chlorine Dosing Controller"
+    },
+    "10.0.61.15": {
+        "asset_name": "Employee Onboarding Portal",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered Employee Onboarding Portal"
+    },
+    "10.0.70.45": {
+        "asset_name": "ACME Certificate Renewal Bot",
+        "criticality_tier": 2,
+        "business_function": "Auto-Registered ACME Certificate Renewal Bot"
+    },
+    "10.0.30.5": {
+        "asset_name": "PKI Root Certificate Authority",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered PKI Root Certificate Authority"
+    },
+    "10.0.61.5": {
+        "asset_name": "Meeting Room Booking System",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Meeting Room Booking System"
+    },
+    "10.0.32.5": {
+        "asset_name": "Dam Floodgate SCADA Controller",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Dam Floodgate SCADA Controller"
+    },
+    "10.0.38.5": {
+        "asset_name": "Maritime ECDIS Navigation System",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Maritime ECDIS Navigation System"
+    },
+    "10.0.41.5": {
+        "asset_name": "SWIFT Financial Messaging Gateway",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered SWIFT Financial Messaging Gateway"
+    },
+    "10.0.46.5": {
+        "asset_name": "Quantum Key Distribution Ground Station",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Quantum Key Distribution Ground Station"
+    },
+    "10.0.40.5": {
+        "asset_name": "Drone Fleet C2 Relay",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Drone Fleet C2 Relay"
+    },
+    "10.0.31.10": {
+        "asset_name": "Power Grid RTU (Substation 4)",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Power Grid RTU (Substation 4)"
+    },
+    "10.0.65.15": {
+        "asset_name": "Social Media Scheduling Tool",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Social Media Scheduling Tool"
+    },
+    "10.0.60.15": {
+        "asset_name": "Marketing Landing Page CMS",
+        "criticality_tier": 3,
+        "business_function": "Auto-Registered Marketing Landing Page CMS"
+    },
+    "10.0.35.5": {
+        "asset_name": "Prison Door Control System",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Prison Door Control System"
+    },
+    "10.0.37.15": {
+        "asset_name": "Avionics FADEC Interface",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Avionics FADEC Interface"
+    },
+    "10.0.36.5": {
+        "asset_name": "Robotic Surgery Controller",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Robotic Surgery Controller"
+    },
+    "10.0.39.5": {
+        "asset_name": "Satellite Uplink Control Station",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered Satellite Uplink Control Station"
+    },
+    "10.0.33.5": {
+        "asset_name": "911 Emergency Dispatch Console",
+        "criticality_tier": 1,
+        "business_function": "Auto-Registered 911 Emergency Dispatch Console"
     }
 }

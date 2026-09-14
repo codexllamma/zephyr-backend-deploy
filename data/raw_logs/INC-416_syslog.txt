@@ -1,0 +1,42 @@
+[FILLER] VPN-Log [16/Sep/2026:23:00:00 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:04 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:05 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:09 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:10 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:13 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:17 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:20 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:24 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:27 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:28 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:32 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:34 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:35 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:38 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:42 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:44 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:48 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:52 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:53 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:54 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:00:58 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:00:59 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[CORE] SSO login from 89.248.165.146 6000km from last login location, target 10.0.60.5.
+[CORE] [IDP-ALERT] Impossible-travel anomaly flagged for account on 10.0.60.5.
+[FILLER] VPN-Log [16/Sep/2026:23:01:06 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:10 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:11 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:13 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:14 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:17 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:20 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:21 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:24 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:25 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:27 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:31 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:33 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] VPN-Log [16/Sep/2026:23:01:35 +0000]: IKEv2 SA established with 89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:39 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:43 +0000]: SUCCESS user=jdoe IP=89.248.165.146
+[FILLER] Okta-Log [16/Sep/2026:23:01:44 +0000]: SUCCESS user=jdoe IP=89.248.165.146

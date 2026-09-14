@@ -1,0 +1,56 @@
+{
+    "incident_id": "INC-201",
+    "status": "COMPLETED",
+    "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+    "source_ip": "91.240.118.77",
+    "target_ip": "10.0.0.21",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Reset the targeted SPN service account password immediately to break the offline cracking attempt on Targeted SPN service account",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: Disallow password resets for sensitive service accounts, instead require password change notifications for security audits.\n[FINAL CRITICAL RULE]: Avoid isolating Tier 1 infrastructure unless failover is successfully executed",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "91.240.118.77",
+    "action_justification": "Avoid isolating Tier 1 infrastructure unless failover is successfully executed",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] Target is Tier 1 (Production SQL Cluster). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first.",
+    "learned_rule": "Avoid isolating Tier 1 infrastructure unless failover is successfully executed",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 91.240.118.77.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET MALWARE Credential Dumping Tool Dropped normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 91.240.118.77 and Target: 10.0.0.21."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Reset the targeted SPN service account password immediately to break the offline cracking attempt on Targeted SPN service account. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Reset the targeted SPN service account password immediately to break the offline cracking attempt' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Disallow password resets for sensitive service accounts, instead require password change notifications for security audits.. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 91.240.118.77. Justification: Avoid isolating Tier 1 infrastructure unless failover is successfully executed"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] Target is Tier 1 (Production SQL Cluster). Proposed action 'ISOLATE_ASSET' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[FILLER] Okta-Log [17/Sep/2026:14:24:00 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:03 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:06 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:09 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:13 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:15 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:19 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:20 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:21 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:23 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:26 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:27 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:31 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:32 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:36 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:38 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:39 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:41 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:43 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:24:45 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[CORE] Auth Failure burst: 80+ attempts src=10.0.92.250 against 10.0.0.6 in 45s
+[CORE] [IDP-ALERT] Credential stuffing pattern detected from 10.0.92.250.
+[FILLER] Okta-Log [17/Sep/2026:14:24:50 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:53 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:55 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:24:56 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:00 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:02 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:06 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:09 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:13 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:14 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:18 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:21 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:25 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] VPN-Log [17/Sep/2026:14:25:29 +0000]: IKEv2 SA established with 10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:32 +0000]: SUCCESS user=jdoe IP=10.0.92.250
+[FILLER] Okta-Log [17/Sep/2026:14:25:36 +0000]: SUCCESS user=jdoe IP=10.0.92.250

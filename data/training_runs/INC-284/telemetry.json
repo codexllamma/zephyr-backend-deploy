@@ -1,0 +1,44 @@
+{
+    "incident_id": "INC-284",
+    "status": "COMPLETED",
+    "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+    "source_ip": "89.248.165.62",
+    "target_ip": "10.0.63.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Kill the PowerShell process and quarantine the host instance from the network on 89.248.165.62 (Source IP, Attacker)",
+    "historical_context": "\n[FINAL CRITICAL RULE]: Prevent unapproved PowerShell process execution",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "89.248.165.62",
+    "action_justification": "Prevent unapproved PowerShell process execution",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network' is invalid.",
+    "learned_rule": "Prevent unapproved PowerShell process execution",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 89.248.165.62.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET MALWARE SMBv1 Worm Propagation Attempt normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 89.248.165.62 and Target: 10.0.63.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 89.248.165.62. Justification: Prevent unapproved PowerShell process execution"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] [FORMAT ERROR] Action 'Kill the PowerShell process and quarantine the host instance from the network' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

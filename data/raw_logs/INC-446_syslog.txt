@@ -1,0 +1,36 @@
+[FILLER] Splunk-UF [17/Sep/2026:05:00:00 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:02 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Sysmon [17/Sep/2026:05:00:05 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:00:07 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:08 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:10 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Sysmon [17/Sep/2026:05:00:12 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Sysmon [17/Sep/2026:05:00:13 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:00:16 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:20 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:00:22 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:26 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:00:29 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:31 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:32 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:33 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:37 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:38 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:41 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:44 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:47 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:00:48 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:00:52 +0000]: Process Create: conhost.exe on 10.0.66.15
+[CORE] Rogue AP beacon detected, SSID spoofing corporate network near 10.0.66.15.
+[CORE] [WIDS-ALERT] Evil-twin AP flagged near 10.0.66.15.
+[FILLER] Splunk-UF [17/Sep/2026:05:00:59 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:01:00 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:01:02 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Sysmon [17/Sep/2026:05:01:06 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:01:10 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:05:01:12 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:01:14 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Sysmon [17/Sep/2026:05:01:15 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:01:19 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:05:01:21 +0000]: Process Create: conhost.exe on 10.0.66.15
+[FILLER] Splunk-UF [17/Sep/2026:05:01:22 +0000]: Forwarding 90 events to indexer.

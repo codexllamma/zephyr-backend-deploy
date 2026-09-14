@@ -1,0 +1,36 @@
+[FILLER] Historian [17/Sep/2026:05:36:00 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:03 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:05 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:07 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:09 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:12 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:15 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:16 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:17 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:21 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:23 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:24 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:25 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:28 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:32 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:36 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:37 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:38 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:42 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:45 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:48 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:52 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:36:53 +0000]: Tag_Update_Success - Node_10.0.0.21
+[CORE] SMBv1 MS17-010-class exploit payload targeting 10.0.0.21:445.
+[CORE] [IDS-ALERT] Worm lateral-movement attempt blocked near 10.0.0.21.
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:56 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:36:59 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:37:01 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:37:04 +0000]: Tag_Update_Success - Node_10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:08 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:09 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:12 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:15 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:17 +0000]: Register read success on 10.0.0.21
+[FILLER] SCADA-Telemetry [17/Sep/2026:05:37:20 +0000]: Register read success on 10.0.0.21
+[FILLER] Historian [17/Sep/2026:05:37:24 +0000]: Tag_Update_Success - Node_10.0.0.21

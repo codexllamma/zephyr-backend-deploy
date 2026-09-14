@@ -1,0 +1,44 @@
+{
+    "incident_id": "INC-276",
+    "status": "COMPLETED",
+    "alert_signature": "ET DOS Volumetric SYN Flood",
+    "source_ip": "77.83.36.250",
+    "target_ip": "10.0.60.5",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration. on Target IP (Victim): 10.0.60.5",
+    "historical_context": "\n[FINAL CRITICAL RULE]: Infrastructure of type 'backend-server' should not be null-routed to prevent data exfiltration. Instead, deny traffic by default to prevent unauthorized access.",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "77.83.36.250",
+    "action_justification": "Infrastructure of type 'backend-server' should not be null-routed to prevent data exfiltration. Instead, deny traffic by default to prevent unauthorized access.",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "[REJECTED] [FORMAT ERROR] Action 'Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration.' is invalid.",
+    "learned_rule": "Infrastructure of type 'backend-server' should not be null-routed to prevent data exfiltration. Instead, deny traffic by default to prevent unauthorized access.",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 77.83.36.250.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET DOS Volumetric SYN Flood normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 77.83.36.250 and Target: 10.0.60.5."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 77.83.36.250. Justification: Infrastructure of type 'backend-server' should not be null-routed to prevent data exfiltration. Instead, deny traffic by default to prevent unauthorized access."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: [REJECTED] [FORMAT ERROR] Action 'Null-route the internal backend server exhibiting the vulnerability to prevent data exfiltration.' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

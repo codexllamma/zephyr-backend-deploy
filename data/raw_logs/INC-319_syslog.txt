@@ -1,0 +1,40 @@
+[FILLER] ALB-Log [16/Sep/2026:03:36:00 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:02 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:03 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:04 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:08 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:09 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:36:10 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:03:36:13 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:36:14 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:36:17 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:36:20 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:24 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:27 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:29 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:31 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:33 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:37 +0000]: 91.240.118.173 TLSv1.3 200
+[CORE] OAuth app requested full-mailbox export scope for tenant on 10.0.0.21.
+[CORE] [CLOUD-ALERT] Mass export via OAuth token flagged for 10.0.0.21.
+[FILLER] ALB-Log [16/Sep/2026:03:36:41 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:44 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:46 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:36:49 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:36:50 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:36:52 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:36:53 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:03:36:55 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:36:57 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:36:58 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:03:37:00 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:37:02 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:37:03 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:37:05 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] CloudTrail [16/Sep/2026:03:37:08 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:37:12 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:37:14 +0000]: AssumeRole called by app-tier role near 10.0.0.21
+[FILLER] ALB-Log [16/Sep/2026:03:37:17 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:37:19 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] ALB-Log [16/Sep/2026:03:37:20 +0000]: 91.240.118.173 TLSv1.3 200
+[FILLER] CloudTrail [16/Sep/2026:03:37:22 +0000]: AssumeRole called by app-tier role near 10.0.0.21

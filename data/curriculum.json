@@ -598,5 +598,2405 @@
         "alert_signature": "ET INFO High-Volume Anomalous Database Writes (Possible SQL Injection / Data Destruction)",
         "source_ip": "10.0.0.50",
         "target_ip": "10.0.5.200"
+    },
+    {
+        "incident_id": "INC-101",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "185.220.101.25",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-102",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "185.191.32.238",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-103",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "10.0.98.254",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-104",
+        "alert_signature": "ET MEDICAL Cold Chain Monitor Setpoint Tampering",
+        "source_ip": "77.83.36.66",
+        "target_ip": "10.0.36.15"
+    },
+    {
+        "incident_id": "INC-105",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "185.220.101.134",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-106",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "91.240.118.17",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-107",
+        "alert_signature": "ET FINANCE SWIFT Message Field Tampering",
+        "source_ip": "10.0.90.170",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-108",
+        "alert_signature": "ET WEB3 Smart Contract Reentrancy Pattern",
+        "source_ip": "10.0.90.160",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-109",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "89.248.165.85",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-110",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "193.32.162.17",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-111",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "194.147.32.177",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-112",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-113",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "45.144.225.114",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-114",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-115",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-116",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-117",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.99.88",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-118",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "193.32.162.197",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-119",
+        "alert_signature": "ET BACKUP Immutable Vault Deletion Attempt",
+        "source_ip": "10.0.94.158",
+        "target_ip": "10.0.30.6"
+    },
+    {
+        "incident_id": "INC-120",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "10.0.98.85",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-121",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "45.144.225.10",
+        "target_ip": "10.0.66.5"
+    },
+    {
+        "incident_id": "INC-122",
+        "alert_signature": "ET BACKUP Immutable Vault Deletion Attempt",
+        "source_ip": "10.0.96.144",
+        "target_ip": "10.0.30.6"
+    },
+    {
+        "incident_id": "INC-123",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "103.99.0.19",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-124",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "10.0.97.127",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-125",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "10.0.93.124",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-126",
+        "alert_signature": "ET NET TCP Sequence Replay Attack",
+        "source_ip": "10.0.93.134",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-127",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "10.0.93.76",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-128",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "193.32.162.214",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-129",
+        "alert_signature": "ET TELECOM SS7 Location Interrogation Spoofing",
+        "source_ip": "10.0.70.65",
+        "target_ip": "10.0.38.15"
+    },
+    {
+        "incident_id": "INC-130",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-131",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "193.32.162.239",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-132",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "89.248.165.129",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-133",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "193.32.162.36",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-134",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "185.220.101.94",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-135",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.91.238",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-136",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.91.74",
+        "target_ip": "10.0.48.5"
+    },
+    {
+        "incident_id": "INC-137",
+        "alert_signature": "ET MEDICAL Infusion Pump Parameter Override",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.36.15"
+    },
+    {
+        "incident_id": "INC-138",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "185.220.101.98",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-139",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "77.83.36.104",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-140",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "89.248.165.142",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-141",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-142",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "103.99.0.223",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-143",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "103.99.0.27",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-144",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-145",
+        "alert_signature": "ET CHAIN Validator Node Consensus Deviation",
+        "source_ip": "10.0.96.91",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-146",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-147",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "194.147.32.254",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-148",
+        "alert_signature": "ET ELECTION Tabulation Server Anomalous Access",
+        "source_ip": "89.248.165.120",
+        "target_ip": "10.0.34.5"
+    },
+    {
+        "incident_id": "INC-149",
+        "alert_signature": "ET IOT Unauthorized Firmware Push via TFTP",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-150",
+        "alert_signature": "ET MEDICAL Infusion Pump Parameter Override",
+        "source_ip": "10.0.94.125",
+        "target_ip": "10.0.36.25"
+    },
+    {
+        "incident_id": "INC-151",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "185.220.101.53",
+        "target_ip": "10.0.47.5"
+    },
+    {
+        "incident_id": "INC-152",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "45.144.225.93",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-153",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-154",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "185.220.101.162",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-155",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "185.220.101.157",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-156",
+        "alert_signature": "ET TELECOM SS7 Location Interrogation Spoofing",
+        "source_ip": "185.191.32.73",
+        "target_ip": "10.0.38.15"
+    },
+    {
+        "incident_id": "INC-157",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "91.240.118.159",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-158",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "10.0.97.173",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-159",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.70.65",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-160",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-161",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "89.248.165.123",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-162",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-163",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "194.147.32.127",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-164",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "185.191.32.131",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-165",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "103.99.0.153",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-166",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "185.191.32.175",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-167",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.63.15"
+    },
+    {
+        "incident_id": "INC-168",
+        "alert_signature": "ET POLICY Suspicious WMI Remote Execution",
+        "source_ip": "91.240.118.195",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-169",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.98.159",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-170",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.96.30",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-171",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "89.248.165.140",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-172",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-173",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "185.220.101.64",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-174",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "10.0.95.227",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-175",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.61.15"
+    },
+    {
+        "incident_id": "INC-176",
+        "alert_signature": "ET PKI Root CA Unauthorized Certificate Issuance",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.30.5"
+    },
+    {
+        "incident_id": "INC-177",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "77.83.36.25",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-178",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.97.248",
+        "target_ip": "10.0.47.5"
+    },
+    {
+        "incident_id": "INC-179",
+        "alert_signature": "ET PKI Root CA Unauthorized Certificate Issuance",
+        "source_ip": "10.0.98.156",
+        "target_ip": "10.0.30.5"
+    },
+    {
+        "incident_id": "INC-180",
+        "alert_signature": "ET ELECTION Tabulation Server Anomalous Access",
+        "source_ip": "10.0.94.23",
+        "target_ip": "10.0.34.5"
+    },
+    {
+        "incident_id": "INC-181",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "185.191.32.96",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-182",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "185.191.32.48",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-183",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-184",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "194.147.32.192",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-185",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "91.240.118.203",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-186",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "194.147.32.58",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-187",
+        "alert_signature": "ET POLICY AD Schema Modification - Deleted Object Reanimation",
+        "source_ip": "91.240.118.88",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-188",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "185.191.32.100",
+        "target_ip": "10.0.61.5"
+    },
+    {
+        "incident_id": "INC-189",
+        "alert_signature": "ET PKI Root CA Unauthorized Certificate Issuance",
+        "source_ip": "194.147.32.180",
+        "target_ip": "10.0.30.5"
+    },
+    {
+        "incident_id": "INC-190",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "103.99.0.97",
+        "target_ip": "10.0.66.5"
+    },
+    {
+        "incident_id": "INC-191",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "77.83.36.54",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-192",
+        "alert_signature": "ET EXPLOIT PCIe DMA Unauthorized Access",
+        "source_ip": "77.83.36.250",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-193",
+        "alert_signature": "ET POLICY Kerberoasting - RC4 Downgrade Request",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-194",
+        "alert_signature": "ET EXPLOIT ICS Modbus Unauthorized Coil Write",
+        "source_ip": "10.0.91.29",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-195",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.0.94.180",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-196",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "45.144.225.206",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-197",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "10.0.97.26",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-198",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "10.0.70.65",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-199",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-200",
+        "alert_signature": "ET AI Vector Database Poisoning Attempt",
+        "source_ip": "77.83.36.24",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-201",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "91.240.118.77",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-202",
+        "alert_signature": "ET IOT Unauthorized Firmware Push via TFTP",
+        "source_ip": "77.83.36.38",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-203",
+        "alert_signature": "ET EXPLOIT Maritime ECDIS GPS Spoofing Indicator",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.38.5"
+    },
+    {
+        "incident_id": "INC-204",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "77.83.36.213",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-205",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "185.220.101.38",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-206",
+        "alert_signature": "ET MEDICAL Cold Chain Monitor Setpoint Tampering",
+        "source_ip": "89.248.165.164",
+        "target_ip": "10.0.36.25"
+    },
+    {
+        "incident_id": "INC-207",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "10.0.96.74",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-208",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "185.191.32.217",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-209",
+        "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+        "source_ip": "10.0.97.112",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-210",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "45.155.205.144",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-211",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "185.191.32.29",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-212",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-213",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "89.248.165.5",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-214",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "185.220.101.23",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-215",
+        "alert_signature": "ET POLICY Pass-the-Hash NTLM Anomaly",
+        "source_ip": "10.0.97.72",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-216",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.0.91.89",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-217",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "77.83.36.180",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-218",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "45.155.205.17",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-219",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-220",
+        "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+        "source_ip": "194.147.32.238",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-221",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-222",
+        "alert_signature": "ET POLICY Suspicious WMI Remote Execution",
+        "source_ip": "10.0.93.226",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-223",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-224",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "45.144.225.153",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-225",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "91.240.118.121",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-226",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "10.0.97.199",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-227",
+        "alert_signature": "ET MALWARE Avionics Interface Anomalous Write",
+        "source_ip": "91.240.118.162",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-228",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.90.114",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-229",
+        "alert_signature": "ET TROJAN Macro-Based Document Dropper",
+        "source_ip": "77.83.36.25",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-230",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "45.155.205.34",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-231",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "45.144.225.9",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-232",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "185.220.101.54",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-233",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "103.99.0.9",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-234",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "10.0.99.126",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-235",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-236",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-237",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "10.0.95.108",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-238",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-239",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.98.48",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-240",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-241",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.61.5"
+    },
+    {
+        "incident_id": "INC-242",
+        "alert_signature": "ET BACKUP Immutable Vault Deletion Attempt",
+        "source_ip": "10.0.91.208",
+        "target_ip": "10.0.30.6"
+    },
+    {
+        "incident_id": "INC-243",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "91.240.118.17",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-244",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "193.32.162.145",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-245",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-246",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-247",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "194.147.32.247",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-248",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "91.240.118.4",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-249",
+        "alert_signature": "ET TELECOM SS7 Location Interrogation Spoofing",
+        "source_ip": "10.0.94.57",
+        "target_ip": "10.0.38.15"
+    },
+    {
+        "incident_id": "INC-250",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-251",
+        "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+        "source_ip": "185.220.101.78",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-252",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "103.99.0.196",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-253",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "185.220.101.220",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-254",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.0.97.212",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-255",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "89.248.165.111",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-256",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "10.0.95.164",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-257",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "103.99.0.173",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-258",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "10.0.92.67",
+        "target_ip": "10.0.40.5"
+    },
+    {
+        "incident_id": "INC-259",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "91.240.118.222",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-260",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-261",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "89.248.165.31",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-262",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "77.83.36.58",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-263",
+        "alert_signature": "ET GRID Substation RTU Unauthorized Breaker Command",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.31.10"
+    },
+    {
+        "incident_id": "INC-264",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "45.155.205.74",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-265",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "10.0.90.211",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-266",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "185.191.32.51",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-267",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "10.0.98.241",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-268",
+        "alert_signature": "ET EXPLOIT Maritime ECDIS GPS Spoofing Indicator",
+        "source_ip": "10.0.90.107",
+        "target_ip": "10.0.38.5"
+    },
+    {
+        "incident_id": "INC-269",
+        "alert_signature": "ET NET DNS Amplification Reflection Attack",
+        "source_ip": "89.248.165.66",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-270",
+        "alert_signature": "ET POLICY AD Schema Modification - Deleted Object Reanimation",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-271",
+        "alert_signature": "ET GRID Substation RTU Unauthorized Breaker Command",
+        "source_ip": "185.191.32.23",
+        "target_ip": "10.0.31.10"
+    },
+    {
+        "incident_id": "INC-272",
+        "alert_signature": "ET CHAIN Validator Node Consensus Deviation",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-273",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "89.248.165.222",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-274",
+        "alert_signature": "ET POLICY Pass-the-Hash NTLM Anomaly",
+        "source_ip": "91.240.118.20",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-275",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.61.15"
+    },
+    {
+        "incident_id": "INC-276",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "77.83.36.250",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-277",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "194.147.32.222",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-278",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "91.240.118.14",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-279",
+        "alert_signature": "ET MALWARE Avionics Interface Anomalous Write",
+        "source_ip": "10.0.92.20",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-280",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "193.32.162.220",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-281",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "194.147.32.95",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-282",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "10.0.94.79",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-283",
+        "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-284",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "89.248.165.62",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-285",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-286",
+        "alert_signature": "ET POLICY Suspicious WMI Remote Execution",
+        "source_ip": "89.248.165.120",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-287",
+        "alert_signature": "ET EXPLOIT Satellite Uplink Command Injection",
+        "source_ip": "185.220.101.252",
+        "target_ip": "10.0.40.5"
+    },
+    {
+        "incident_id": "INC-288",
+        "alert_signature": "ET EXPLOIT PCIe DMA Unauthorized Access",
+        "source_ip": "10.0.94.26",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-289",
+        "alert_signature": "ET WEB3 Smart Contract Reentrancy Pattern",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-290",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "45.155.205.199",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-291",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-292",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.0.92.15",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-293",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "10.0.91.133",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-294",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-295",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "10.0.93.254",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-296",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-297",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-298",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-299",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "10.0.70.65",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-300",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "194.147.32.232",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-301",
+        "alert_signature": "ET NET DNS Amplification Reflection Attack",
+        "source_ip": "10.0.95.146",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-302",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "103.99.0.12",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-303",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "77.83.36.227",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-304",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "77.83.36.154",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-305",
+        "alert_signature": "ET POLICY Kerberoasting - RC4 Downgrade Request",
+        "source_ip": "10.0.90.238",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-306",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "45.144.225.33",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-307",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-308",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "194.147.32.32",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-309",
+        "alert_signature": "ET GRID Substation RTU Unauthorized Breaker Command",
+        "source_ip": "10.0.98.160",
+        "target_ip": "10.0.31.10"
+    },
+    {
+        "incident_id": "INC-310",
+        "alert_signature": "ET TROJAN Macro-Based Document Dropper",
+        "source_ip": "77.83.36.223",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-311",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "194.147.32.52",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-312",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "185.191.32.60",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-313",
+        "alert_signature": "ET MALWARE Destructive Wiper - Mass Service Stop",
+        "source_ip": "91.240.118.238",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-314",
+        "alert_signature": "ET AI Vector Database Poisoning Attempt",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-315",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "194.147.32.182",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-316",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "185.220.101.110",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-317",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "10.0.95.54",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-318",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.94.245",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-319",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "91.240.118.173",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-320",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "10.0.93.125",
+        "target_ip": "10.0.47.5"
+    },
+    {
+        "incident_id": "INC-321",
+        "alert_signature": "ET MEDICAL Cold Chain Monitor Setpoint Tampering",
+        "source_ip": "10.0.94.238",
+        "target_ip": "10.0.36.25"
+    },
+    {
+        "incident_id": "INC-322",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "45.144.225.22",
+        "target_ip": "10.0.66.5"
+    },
+    {
+        "incident_id": "INC-323",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "10.0.93.239",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-324",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "89.248.165.196",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-325",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "194.147.32.87",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-326",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "45.155.205.168",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-327",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "45.144.225.177",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-328",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "89.248.165.222",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-329",
+        "alert_signature": "ET MEDICAL Cold Chain Monitor Setpoint Tampering",
+        "source_ip": "89.248.165.81",
+        "target_ip": "10.0.36.15"
+    },
+    {
+        "incident_id": "INC-330",
+        "alert_signature": "ET NET DNS Amplification Reflection Attack",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-331",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "10.0.94.218",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-332",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-333",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.90.197",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-334",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "10.0.93.47",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-335",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "10.0.90.55",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-336",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-337",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "193.32.162.194",
+        "target_ip": "10.0.65.15"
+    },
+    {
+        "incident_id": "INC-338",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-339",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "10.0.96.45",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-340",
+        "alert_signature": "ET TROJAN Macro-Based Document Dropper",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-341",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "185.220.101.154",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-342",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "77.83.36.122",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-343",
+        "alert_signature": "ET POLICY Kerberoasting - RC4 Downgrade Request",
+        "source_ip": "91.240.118.158",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-344",
+        "alert_signature": "ET CLOUD Anomalous Mass Data Export via OAuth",
+        "source_ip": "10.0.90.63",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-345",
+        "alert_signature": "ET POLICY Pass-the-Hash NTLM Anomaly",
+        "source_ip": "77.83.36.105",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-346",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "194.147.32.77",
+        "target_ip": "10.0.49.5"
+    },
+    {
+        "incident_id": "INC-347",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "103.99.0.78",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-348",
+        "alert_signature": "ET WEB3 Smart Contract Reentrancy Pattern",
+        "source_ip": "10.0.98.140",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-349",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "45.144.225.194",
+        "target_ip": "10.0.60.15"
+    },
+    {
+        "incident_id": "INC-350",
+        "alert_signature": "ET GRID Substation RTU Unauthorized Breaker Command",
+        "source_ip": "10.0.92.250",
+        "target_ip": "10.0.31.10"
+    },
+    {
+        "incident_id": "INC-351",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "89.248.165.21",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-352",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "185.191.32.224",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-353",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "10.0.92.163",
+        "target_ip": "10.0.47.5"
+    },
+    {
+        "incident_id": "INC-354",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "194.147.32.213",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-355",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "89.248.165.222",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-356",
+        "alert_signature": "ET MALWARE Destructive Wiper - Mass Service Stop",
+        "source_ip": "10.0.92.87",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-357",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "91.240.118.16",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-358",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "185.191.32.159",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-359",
+        "alert_signature": "ET EXPLOIT PCIe DMA Unauthorized Access",
+        "source_ip": "10.0.95.151",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-360",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-361",
+        "alert_signature": "ET POLICY Suspicious WMI Remote Execution",
+        "source_ip": "185.191.32.60",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-362",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "185.220.101.38",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-363",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-364",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-365",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-366",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-367",
+        "alert_signature": "ET MALWARE Avionics Interface Anomalous Write",
+        "source_ip": "10.0.97.151",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-368",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "10.0.95.157",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-369",
+        "alert_signature": "ET IOT Unauthorized Firmware Push via TFTP",
+        "source_ip": "185.220.101.215",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-370",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "193.32.162.117",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-371",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.96.185",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-372",
+        "alert_signature": "ET PHYSEC Prison Door Controller Unauthorized Command",
+        "source_ip": "10.0.95.108",
+        "target_ip": "10.0.35.5"
+    },
+    {
+        "incident_id": "INC-373",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "77.83.36.162",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-374",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-375",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-376",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.93.3",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-377",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "91.240.118.187",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-378",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "77.83.36.139",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-379",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "10.0.93.174",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-380",
+        "alert_signature": "ET MALWARE Credential Dumping Tool Dropped",
+        "source_ip": "193.32.162.251",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-381",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "45.144.225.243",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-382",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "194.147.32.236",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-383",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.66.5"
+    },
+    {
+        "incident_id": "INC-384",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-385",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "45.144.225.196",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-386",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "185.191.32.216",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-387",
+        "alert_signature": "ET INFO Anomalous Large Outbound Transfer",
+        "source_ip": "89.248.165.132",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-388",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "45.155.205.143",
+        "target_ip": "10.0.65.15"
+    },
+    {
+        "incident_id": "INC-389",
+        "alert_signature": "ET EXPLOIT Struts2 OGNL Injection RCE (CVE-2023-50164)",
+        "source_ip": "10.0.70.5",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-390",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "10.0.93.248",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-391",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-392",
+        "alert_signature": "ET POLICY AD Schema Modification - Deleted Object Reanimation",
+        "source_ip": "10.0.70.65",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-393",
+        "alert_signature": "ET POLICY DNS Tunneling - High Entropy TXT Query",
+        "source_ip": "10.0.98.84",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-394",
+        "alert_signature": "ET EXPLOIT PCIe DMA Unauthorized Access",
+        "source_ip": "193.32.162.158",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-395",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "45.155.205.142",
+        "target_ip": "10.0.60.15"
+    },
+    {
+        "incident_id": "INC-396",
+        "alert_signature": "ET TROJAN Macro-Based Document Dropper",
+        "source_ip": "194.147.32.68",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-397",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "185.191.32.82",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-398",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.0.70.45",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-399",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "185.220.101.108",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-400",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "10.0.93.124",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-401",
+        "alert_signature": "ET BACKUP Immutable Vault Deletion Attempt",
+        "source_ip": "10.0.91.216",
+        "target_ip": "10.0.30.6"
+    },
+    {
+        "incident_id": "INC-402",
+        "alert_signature": "ET EXPLOIT AWS IMDS SSRF Attempt",
+        "source_ip": "10.0.96.236",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-403",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "194.147.32.139",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-404",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "10.0.95.182",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-405",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-406",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "91.240.118.23",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-407",
+        "alert_signature": "ET FINANCE SWIFT Message Field Tampering",
+        "source_ip": "194.147.32.190",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-408",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "10.0.99.79",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-409",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-410",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "45.144.225.146",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-411",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "10.0.98.57",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-412",
+        "alert_signature": "ET MEDICAL Cold Chain Monitor Setpoint Tampering",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.36.15"
+    },
+    {
+        "incident_id": "INC-413",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "89.248.165.43",
+        "target_ip": "10.0.60.25"
+    },
+    {
+        "incident_id": "INC-414",
+        "alert_signature": "ET GRID Substation RTU Unauthorized Breaker Command",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.31.10"
+    },
+    {
+        "incident_id": "INC-415",
+        "alert_signature": "ET TROJAN Macro-Based Document Dropper",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-416",
+        "alert_signature": "ET POLICY Impossible Travel Authentication",
+        "source_ip": "89.248.165.146",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-417",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "10.0.94.59",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-418",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.62.15"
+    },
+    {
+        "incident_id": "INC-419",
+        "alert_signature": "ET LEGACY Mainframe Batch Job Unauthorized Modification",
+        "source_ip": "89.248.165.8",
+        "target_ip": "10.0.42.5"
+    },
+    {
+        "incident_id": "INC-420",
+        "alert_signature": "ET PHYSEC Prison Door Controller Unauthorized Command",
+        "source_ip": "45.155.205.30",
+        "target_ip": "10.0.35.5"
+    },
+    {
+        "incident_id": "INC-421",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "193.32.162.95",
+        "target_ip": "10.0.37.5"
+    },
+    {
+        "incident_id": "INC-422",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "89.248.165.137",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-423",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "185.220.101.156",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-424",
+        "alert_signature": "ET EXPLOIT ICS Modbus Unauthorized Coil Write",
+        "source_ip": "185.220.101.141",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-425",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.93.2",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-426",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "45.144.225.164",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-427",
+        "alert_signature": "ET MALWARE Destructive Wiper - Mass Service Stop",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-428",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-429",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "77.83.36.28",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-430",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-431",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-432",
+        "alert_signature": "ET EXPLOIT Satellite Uplink Command Injection",
+        "source_ip": "10.0.94.107",
+        "target_ip": "10.0.37.15"
+    },
+    {
+        "incident_id": "INC-433",
+        "alert_signature": "ET CHAIN Validator Node Consensus Deviation",
+        "source_ip": "185.220.101.206",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-434",
+        "alert_signature": "ET MALWARE C2 Beacon - Jittered HTTPS Callback",
+        "source_ip": "10.0.94.176",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-435",
+        "alert_signature": "ET SCAN Aggressive Internal Port Sweep",
+        "source_ip": "194.147.32.74",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-436",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "103.99.0.214",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-437",
+        "alert_signature": "ET EXPLOIT Zero-Day Shellcode Pattern (Unclassified)",
+        "source_ip": "45.144.225.237",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-438",
+        "alert_signature": "ET NET DNS Amplification Reflection Attack",
+        "source_ip": "89.248.165.133",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-439",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.63.5"
+    },
+    {
+        "incident_id": "INC-440",
+        "alert_signature": "ET NET BGP Route Anomaly (Possible Hijack)",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.38.15"
+    },
+    {
+        "incident_id": "INC-441",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "10.0.93.142",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-442",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "185.220.101.52",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-443",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "89.248.165.180",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-444",
+        "alert_signature": "ET CHAIN Validator Node Consensus Deviation",
+        "source_ip": "89.248.165.225",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-445",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "10.0.97.152",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-446",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "45.144.225.213",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-447",
+        "alert_signature": "ET MALWARE Destructive Wiper - Mass Service Stop",
+        "source_ip": "185.191.32.97",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-448",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "10.0.99.252",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-449",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "194.147.32.63",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-450",
+        "alert_signature": "ET MEDICAL Infusion Pump Parameter Override",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.36.5"
+    },
+    {
+        "incident_id": "INC-451",
+        "alert_signature": "ET POLICY Golden SAML Token Forgery Indicator",
+        "source_ip": "45.155.205.45",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-452",
+        "alert_signature": "ET NET TCP Sequence Replay Attack",
+        "source_ip": "10.0.90.126",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-453",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "10.0.98.216",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-454",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "10.0.95.94",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-455",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.39.5"
+    },
+    {
+        "incident_id": "INC-456",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-457",
+        "alert_signature": "ET INFO ICMP Tunneling / Covert Channel",
+        "source_ip": "185.191.32.128",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-458",
+        "alert_signature": "ET PKI Root CA Unauthorized Certificate Issuance",
+        "source_ip": "10.0.99.253",
+        "target_ip": "10.0.30.5"
+    },
+    {
+        "incident_id": "INC-459",
+        "alert_signature": "ET FINANCE SWIFT Message Field Tampering",
+        "source_ip": "10.0.95.60",
+        "target_ip": "10.20.1.6"
+    },
+    {
+        "incident_id": "INC-460",
+        "alert_signature": "ET EXPLOIT Log4Shell RCE Variant (CVE-2021-44228)",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.60.15"
+    },
+    {
+        "incident_id": "INC-461",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "10.0.90.224",
+        "target_ip": "10.0.39.5"
+    },
+    {
+        "incident_id": "INC-462",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.31.20"
+    },
+    {
+        "incident_id": "INC-463",
+        "alert_signature": "ET WIRELESS Rogue Access Point Detected",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-464",
+        "alert_signature": "ET EXPLOIT ICS Modbus Unauthorized Coil Write",
+        "source_ip": "10.0.97.181",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-465",
+        "alert_signature": "ET MALWARE Obfuscated PowerShell Execution",
+        "source_ip": "10.0.94.72",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-466",
+        "alert_signature": "ET AEROSPACE Drone Fleet C2 Relay Hijack Attempt",
+        "source_ip": "10.0.95.151",
+        "target_ip": "10.0.39.5"
+    },
+    {
+        "incident_id": "INC-467",
+        "alert_signature": "ET EXPLOIT Kernel Module Load - Possible Rootkit",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-468",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "45.144.225.193",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-469",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "194.147.32.26",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-470",
+        "alert_signature": "ET MALWARE Cron Job Reverse Shell Persistence",
+        "source_ip": "185.191.32.19",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-471",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "10.0.70.35",
+        "target_ip": "10.0.65.5"
+    },
+    {
+        "incident_id": "INC-472",
+        "alert_signature": "ET COMPROMISED Tor Exit Node Communication",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-473",
+        "alert_signature": "ET PHYSEC Dam Floodgate Setpoint Change",
+        "source_ip": "10.0.70.25",
+        "target_ip": "10.0.48.5"
+    },
+    {
+        "incident_id": "INC-474",
+        "alert_signature": "ET POLICY AD Schema Modification - Deleted Object Reanimation",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-475",
+        "alert_signature": "ET FINANCE SWIFT Message Field Tampering",
+        "source_ip": "194.147.32.82",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-476",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "91.240.118.153",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-477",
+        "alert_signature": "ET EXPLOIT Maritime ECDIS GPS Spoofing Indicator",
+        "source_ip": "10.0.92.57",
+        "target_ip": "10.0.38.5"
+    },
+    {
+        "incident_id": "INC-478",
+        "alert_signature": "ET EXPLOIT ICS Modbus Unauthorized Coil Write",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.32.5"
+    },
+    {
+        "incident_id": "INC-479",
+        "alert_signature": "ET SCAN Meterpreter Reverse HTTPS Shell",
+        "source_ip": "45.144.225.208",
+        "target_ip": "10.0.64.5"
+    },
+    {
+        "incident_id": "INC-480",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "10.0.92.199",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-481",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "194.147.32.82",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-482",
+        "alert_signature": "ET EXPLOIT DNS Rebinding Toward Internal Service",
+        "source_ip": "45.144.225.82",
+        "target_ip": "10.0.39.15"
+    },
+    {
+        "incident_id": "INC-483",
+        "alert_signature": "ET EXPLOIT Maritime ECDIS GPS Spoofing Indicator",
+        "source_ip": "45.155.205.177",
+        "target_ip": "10.0.38.5"
+    },
+    {
+        "incident_id": "INC-484",
+        "alert_signature": "ET IOT Unauthorized BACnet Write Command",
+        "source_ip": "89.248.165.57",
+        "target_ip": "10.0.33.5"
+    },
+    {
+        "incident_id": "INC-485",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "103.99.0.154",
+        "target_ip": "10.0.66.15"
+    },
+    {
+        "incident_id": "INC-486",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "10.0.70.55",
+        "target_ip": "10.0.64.15"
+    },
+    {
+        "incident_id": "INC-487",
+        "alert_signature": "ET PKI Root CA Unauthorized Certificate Issuance",
+        "source_ip": "103.99.0.212",
+        "target_ip": "10.0.30.5"
+    },
+    {
+        "incident_id": "INC-488",
+        "alert_signature": "ET EXPLOIT PCIe DMA Unauthorized Access",
+        "source_ip": "185.191.32.68",
+        "target_ip": "10.0.62.5"
+    },
+    {
+        "incident_id": "INC-489",
+        "alert_signature": "ET TROJAN Ransomware Extension Rename (.blackcat)",
+        "source_ip": "198.51.100.56",
+        "target_ip": "10.0.41.5"
+    },
+    {
+        "incident_id": "INC-490",
+        "alert_signature": "ET DOS Volumetric SYN Flood",
+        "source_ip": "10.10.5.56",
+        "target_ip": "10.0.60.5"
+    },
+    {
+        "incident_id": "INC-491",
+        "alert_signature": "ET PHISHING Malicious Attachment Delivered",
+        "source_ip": "194.147.32.115",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-492",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-493",
+        "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+        "source_ip": "10.0.92.250",
+        "target_ip": "10.0.0.6"
+    },
+    {
+        "incident_id": "INC-494",
+        "alert_signature": "ET MALWARE SMBv1 Worm Propagation Attempt",
+        "source_ip": "10.0.90.137",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-495",
+        "alert_signature": "ET POLICY Cryptocoin Miner Stratum Protocol",
+        "source_ip": "193.32.162.48",
+        "target_ip": "10.0.44.6"
+    },
+    {
+        "incident_id": "INC-496",
+        "alert_signature": "ET WEB_SPECIFIC SQLi Boolean-Based Blind Attempt",
+        "source_ip": "185.191.32.4",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-497",
+        "alert_signature": "ET NET TCP Sequence Replay Attack",
+        "source_ip": "10.100.0.6",
+        "target_ip": "10.0.46.5"
+    },
+    {
+        "incident_id": "INC-498",
+        "alert_signature": "ET WEB3 Smart Contract Reentrancy Pattern",
+        "source_ip": "10.0.97.207",
+        "target_ip": "10.0.43.5"
+    },
+    {
+        "incident_id": "INC-499",
+        "alert_signature": "ET INFO Suspicious Steganographic Payload in Upload",
+        "source_ip": "10.0.93.57",
+        "target_ip": "10.0.0.21"
+    },
+    {
+        "incident_id": "INC-500",
+        "alert_signature": "ET WATER Chlorine Dosing Setpoint Manipulation",
+        "source_ip": "10.0.70.16",
+        "target_ip": "10.0.31.20"
     }
 ]

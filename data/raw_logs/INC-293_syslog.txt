@@ -1,0 +1,37 @@
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:00 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:04 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:07 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:08 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:11 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:14 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:17 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:20 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:23 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:24 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:26 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:29 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:30 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:32 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:33 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:36 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:37 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:41 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:44 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:48 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:24:52 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[CORE] 10.0.91.133 - - [15/Sep/2026:22:24:54 +0000] "GET /search?q=1 AND 1=1-- HTTP/1.1" 200 512
+[CORE] [DB-AUDIT] Anomalous boolean-blind query pattern from 10.0.91.133 against 10.0.0.21.
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:24:57 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:25:01 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:03 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:04 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:25:08 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:10 +0000] "GET /api/v1/health HTTP/1.1" 200 45
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:14 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:15 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:25:19 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:22 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:25 +0000] "GET /assets/main.js HTTP/1.1" 200 812
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:25:27 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.0.21 - - [15/Sep/2026:22:25:29 +0000] "GET /favicon.ico HTTP/1.1" 200 312
+[FILLER] 10.0.91.133 - - [15/Sep/2026:22:25:33 +0000] "GET /assets/main.js HTTP/1.1" 200 812

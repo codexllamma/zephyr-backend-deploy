@@ -1,0 +1,42 @@
+[FILLER] Historian [14/Sep/2026:15:12:00 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:04 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:08 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:09 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:11 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:15 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:19 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:21 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:23 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:27 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:29 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:31 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:35 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:37 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:38 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:42 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:44 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:12:46 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:12:47 +0000]: Register read success on 10.0.36.15
+[CORE] Remote dosage parameter change pushed to 10.0.36.15 from 10.0.70.16.
+[CORE] [MEDDEV-ALERT] Unauthorized infusion parameter override on 10.0.36.15.
+[CORE] [COMPLIANCE] Activity matches signed SOW for Q3 authorized security assessment #4641.
+[FILLER] Historian [14/Sep/2026:15:12:57 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:01 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:02 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:05 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:08 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:09 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:11 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:14 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:16 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:20 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:22 +0000]: Register read success on 10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:23 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:26 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:29 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:31 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] Historian [14/Sep/2026:15:13:35 +0000]: Tag_Update_Success - Node_10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:37 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:41 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:43 +0000]: Register read success on 10.0.36.15
+[FILLER] SCADA-Telemetry [14/Sep/2026:15:13:45 +0000]: Register read success on 10.0.36.15

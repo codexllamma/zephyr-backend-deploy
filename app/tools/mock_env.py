@@ -2,12 +2,16 @@ import os
 import json
 import logging
 import ipaddress
-from langchain_core.tools import tool
+import re
 from dotenv import load_dotenv
 
-# LangChain & Supabase JIT Query Imports
+# LangChain & Pydantic Imports
+from langchain_core.tools import tool
+from pydantic import BaseModel, Field
+
+# Local JIT Query Imports (Ollama & Supabase)
 from langchain_community.vectorstores import SupabaseVectorStore
-from langchain_openai import OpenAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from supabase import create_client, Client
 
 load_dotenv()
@@ -36,27 +40,25 @@ def load_inventory() -> dict:
 ASSET_INVENTORY = load_inventory()
 
 def resolve_asset(ip_string: str) -> dict:
-    """
-    Core Engine Router: Validates an IP against the Asset Inventory.
-    Enforces Fail-Loud for missing internal assets to prevent silent dataset drift.
-    """
-    if ip_string in ASSET_INVENTORY:
-        return ASSET_INVENTORY[ip_string]
+    """Core Engine Router: Validates an IP against the Asset Inventory."""
+    # Extract just the raw IP using regex to strip LLM hallucinations like "(Source IP)"
+    ip_match = re.search(r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b', ip_string)
+    clean_ip = ip_match.group(0) if ip_match else ip_string
+
+    if clean_ip in ASSET_INVENTORY:
+        return ASSET_INVENTORY[clean_ip]
         
     try:
-        ip_obj = ipaddress.ip_address(ip_string)
-        # Catch RFC 1918, Loopback, Link-Local (e.g. AWS IMDS 169.254.x.x)
+        ip_obj = ipaddress.ip_address(clean_ip)
         if ip_obj.is_private or ip_obj.is_loopback or ip_obj.is_link_local:
-            raise KeyError(f"Pipeline Fatal Error: Internal/Reserved IP {ip_string} missing from ASSET_INVENTORY.")
+            raise KeyError(f"Pipeline Fatal Error: Internal/Reserved IP {clean_ip} missing from ASSET_INVENTORY.")
         else:
-            # Default-Approve logic for rogue external IP addresses
             return {
                 "asset_name": "Unknown External Entity", 
                 "criticality_tier": 4, 
                 "business_function": "Untrusted Public Internet"
             }
     except ValueError:
-        # Failsafe for malformed strings or MAC addresses (e.g., Rogue APs)
         return {
             "asset_name": "Non-Standard/MAC Identifier", 
             "criticality_tier": 4, 
@@ -64,60 +66,64 @@ def resolve_asset(ip_string: str) -> dict:
         }
 
 # ==========================================
+# RELAXED PYDANTIC SCHEMAS (FOR LLM FEEDBACK)
+# ==========================================
+class SecurityActionInput(BaseModel):
+    action: str = Field(
+        description="The exact mitigation action. MUST be one of: BLOCK_SOURCE, ISOLATE_ASSET, DISABLE_ADAPTER, REBOOT_SYSTEM, WIPE_DISK, DELETE_FILE, TARGETED_RULE. Do not write sentences."
+    )
+    target: str = Field(
+        description="The target IP address to apply the action against."
+    )
+
+# ==========================================
 # SIMULATION TOOLS
 # ==========================================
+
+# ==========================================
+# SIMULATION TOOLS
+# ==========================================
+
+def sanitize_action(action_str: str) -> str:
+    """Fuzzy matching interceptor to handle stubborn LLM sentence formatting."""
+    act = action_str.upper()
+    if "BLOCK" in act: return "BLOCK_SOURCE"
+    if "ISOLATE" in act: return "ISOLATE_ASSET"
+    if "DISABLE" in act: return "DISABLE_ADAPTER"
+    if "REBOOT" in act: return "REBOOT_SYSTEM"
+    if "WIPE" in act: return "WIPE_DISK"
+    if "DELETE" in act: return "DELETE_FILE"
+    if "RULE" in act or "MITIGAT" in act: return "TARGETED_RULE"
+    return action_str
 
 @tool
 def check_vulnerability(ip: str) -> str:
     """Check if the target IP has known vulnerabilities via mocked vulnerability scanner."""
     logger.info(f"Tool Execution: check_vulnerability(ip={ip})")
-    
-    if ip == "10.0.1.15":
-        result = f"[{ip}] CVE-2021-44228 (Log4Shell): Target application is highly vulnerable."
-    else:
-        result = f"[{ip}] No known critical vulnerabilities found."
-    
-    logger.debug(f"check_vulnerability result: {result}")
-    return result
+    if ip == "10.0.1.15": 
+        return f"[{ip}] CVE-2021-44228 (Log4Shell): Target application is highly vulnerable."
+    return f"[{ip}] No known critical vulnerabilities found."
 
 @tool
 def check_server_logs(incident_id: str) -> str:
     """Retrieve raw server logs associated with the incident via live Supabase Vector Search."""
     logger.info(f"Tool Execution: check_server_logs(incident_id={incident_id})")
-    
     try:
         supabase_url = os.environ.get("SUPABASE_URL")
         supabase_key = os.environ.get("SUPABASE_SERVICE_KEY")
+        if not supabase_url or not supabase_key: return "[ERROR] Supabase credentials missing."
         
-        if not supabase_url or not supabase_key:
-            return "[ERROR] Supabase credentials missing. Cannot execute vector search."
-
         supabase: Client = create_client(supabase_url, supabase_key)
-        embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-        vector_store = SupabaseVectorStore(
-            client=supabase, 
-            embedding=embeddings, 
-            table_name="documents", 
-            query_name="match_documents"
-        )
+        embeddings = OllamaEmbeddings(model="all-minilm", base_url=os.environ.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434"))
+        vector_store = SupabaseVectorStore(client=supabase, embedding=embeddings, table_name="server_logs", query_name="match_server_logs")
         
-        # Execute a metadata-filtered similarity search for the exact JIT-embedded document
-        docs = vector_store.similarity_search(
-            query="Extract malicious telemetry", 
-            filter={"incident_id": incident_id},
-            k=1
-        )
-        
-        if docs:
-            return docs[0].metadata.get("full_timeline", "Timeline missing in metadata.")
-        else:
-            return f"[ERROR] No SIEM logs found in vector database for {incident_id}."
-            
+        docs = vector_store.similarity_search(query="Extract malicious telemetry", filter={"incident_id": incident_id}, k=1)
+        if docs: return docs[0].metadata.get("full_timeline", "Timeline missing in metadata.")
+        return f"[ERROR] No SIEM logs found for {incident_id}."
     except Exception as e:
-        logger.error(f"Vector search failed: {e}")
         return f"[ERROR] SIEM query failed: {str(e)}"
 
-@tool
+@tool(args_schema=SecurityActionInput)
 def simulate_blast_radius(action: str, target: str) -> str:
     """
     Near-Miss Simulation: Run by the Reviewer agent to test a proposed action against the CMDB topology.
@@ -125,32 +131,35 @@ def simulate_blast_radius(action: str, target: str) -> str:
     """
     logger.info(f"Tool Execution: simulate_blast_radius(action={action}, target={target})")
     
+    # INTERCEPT & SANITIZE
+    clean_action = sanitize_action(action)
+    
+    valid_actions = ["BLOCK_SOURCE", "ISOLATE_ASSET", "DISABLE_ADAPTER", "REBOOT_SYSTEM", "WIPE_DISK", "DELETE_FILE", "TARGETED_RULE"]
+    if clean_action not in valid_actions:
+        return f"[REJECTED] [FORMAT ERROR] Action '{clean_action}' is invalid."
+
     infra = resolve_asset(target)
     tier = infra["criticality_tier"]
     
     if tier == 1:
-        if action in ["BLOCK_SOURCE", "ISOLATE_ASSET", "DISABLE_ADAPTER", "REBOOT_SYSTEM"]:
-            result = f"[REJECTED] Target is Tier 1 ({infra['asset_name']}). Proposed action '{action}' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
-        else:
-            result = f"[APPROVED] Action '{action}' passes Tier 1 safety checks."
+        if clean_action in ["BLOCK_SOURCE", "ISOLATE_ASSET", "DISABLE_ADAPTER", "REBOOT_SYSTEM"]:
+            return f"[REJECTED] Target is Tier 1 ({infra['asset_name']}). Proposed action '{clean_action}' violates availability SLA. Suggest granular API revocation, WAF targeting, or failover first."
+        return f"[APPROVED] Action '{clean_action}' passes Tier 1 safety checks."
             
     elif tier == 2:
-        if action in ["REBOOT_SYSTEM", "WIPE_DISK", "DELETE_FILE"]:
-            result = f"[REJECTED] Target is Tier 2 ({infra['asset_name']}). Proposed action '{action}' violates data persistence/uptime constraints. Suggest isolation instead."
-        else:
-            result = f"[APPROVED] Action '{action}' passes Tier 2 safety checks."
+        if clean_action in ["REBOOT_SYSTEM", "WIPE_DISK", "DELETE_FILE"]:
+            return f"[REJECTED] Target is Tier 2 ({infra['asset_name']}). Proposed action '{clean_action}' violates data persistence constraints."
+        return f"[APPROVED] Action '{clean_action}' passes Tier 2 safety checks."
             
     elif tier >= 3:
-        result = f"[APPROVED] Action '{action}' safely executed against Tier {tier} entity ({infra['asset_name']}). Zero critical blast radius."
-        
-    logger.info(f"Blast Radius Simulation Result: {result}")
-    return result
+        return f"[APPROVED] Action '{clean_action}' safely executed against Tier {tier} entity ({infra['asset_name']}). Zero critical blast radius."
 
-@tool
+@tool(args_schema=SecurityActionInput)
 def execute_firewall_change(action: str, target: str) -> str:
     """Production Execution: Commits the approved action to the network fabric."""
     logger.info(f"Tool Execution: execute_firewall_change(action={action}, target={target})")
-    return f"[SUCCESS] Applied {action} to {target}. Network fabric routing updated successfully."
+    clean_action = sanitize_action(action)
+    return f"[SUCCESS] Applied {clean_action} to {target}. Network fabric routing updated successfully."
 
 @tool
 def verify_network_traffic(target: str) -> str:
@@ -158,5 +167,4 @@ def verify_network_traffic(target: str) -> str:
     logger.info(f"Tool Execution: verify_network_traffic(target={target})")
     return f"[VERIFIED] No further malicious egress or lateral movement traffic observed on {target}. Connections reset."
 
-# Standard toolset exposed to the Investigator agent
-soc_tools = [check_vulnerability, check_server_logs]
+soc_tools = [check_vulnerability, check_server_logs, simulate_blast_radius, execute_firewall_change, verify_network_traffic]

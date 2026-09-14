@@ -1,0 +1,68 @@
+{
+    "incident_id": "INC-127",
+    "status": "COMPLETED",
+    "alert_signature": "ET SCAN Credential Stuffing / Distributed Brute Force",
+    "source_ip": "10.0.93.76",
+    "target_ip": "10.0.0.6",
+    "hypotheses": [
+        "H1: Attack executed.",
+        "H2: Blocked by defenses.",
+        "H3: False positive."
+    ],
+    "assessment_outcome": "INCONCLUSIVE",
+    "textbook_playbook": "Implement Phase 1 (Standard Playbook) and monitor for further activity on User accounts experiencing repeated authentication failures on the Target IP (Victim): 10.0.0.6",
+    "historical_context": "\n[NEW CRITICAL RULE JUST LEARNED]: When detecting repeated authentication failures on a User_Account, implement Phase 2 (Enhanced Playbook) and initiate a thorough investigation\n[NEW CRITICAL RULE JUST LEARNED]: Block all incoming traffic from any IP address within a private IP range that attempts to connect to a publicly exposed service.\n[FINAL CRITICAL RULE]: If source IP is an ICS device, do not implement PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE) rules",
+    "proposed_action": "TARGETED_RULE",
+    "proposed_target": "10.0.93.76",
+    "action_justification": "If source IP is an ICS device, do not implement PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE) rules",
+    "reviewer_decision": "APPROVE",
+    "reviewer_feedback": "SIMULATOR_CRASH",
+    "learned_rule": "If source IP is an ICS device, do not implement PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE) rules",
+    "execution_result": "[SUCCESS] Applied TARGETED_RULE to 10.0.93.76.",
+    "messages": [
+        {
+            "type": "ai",
+            "content": "Intake complete. Alert ET SCAN Credential Stuffing / Distributed Brute Force normalized. Awaiting investigation."
+        },
+        {
+            "type": "ai",
+            "content": "Investigator Requirement: Gathering telemetry for Source: 10.0.93.76 and Target: 10.0.0.6."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute Implement Phase 1 (Standard Playbook) and monitor for further activity on User accounts experiencing repeated authentication failures on the Target IP (Victim): 10.0.0.6. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: [REJECTED] [FORMAT ERROR] Action 'Implement Phase 1 (Standard Playbook) and monitor for further activity' is invalid."
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: When detecting repeated authentication failures on a User_Account, implement Phase 2 (Enhanced Playbook) and initiate a thorough investigation. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 10.0.93.76. Justification: Standard Playbook."
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer REJECT: SIMULATOR_CRASH"
+        },
+        {
+            "type": "ai",
+            "content": "RART Policy Mutated: Block all incoming traffic from any IP address within a private IP range that attempts to connect to a publicly exposed service.. Routing back to Defense..."
+        },
+        {
+            "type": "ai",
+            "content": "Defense Strategy: Execute TARGETED_RULE on 10.0.93.76. Justification: If source IP is an ICS device, do not implement PHASE 2 (PAST MISTAKES - CRITICAL OVERRIDE) rules"
+        },
+        {
+            "type": "ai",
+            "content": "Reviewer APPROVE: SIMULATOR_CRASH"
+        },
+        {
+            "type": "ai",
+            "content": "[SUCCESS] Applied TARGETED_RULE. Network fabric routing updated successfully."
+        }
+    ]
+}

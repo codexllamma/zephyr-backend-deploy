@@ -1,0 +1,40 @@
+[FILLER] Splunk-UF [17/Sep/2026:03:36:00 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:03:36:02 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:03:36:06 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:36:07 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:11 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:14 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:15 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:17 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:19 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:21 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:23 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Splunk-UF [17/Sep/2026:03:36:24 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:36:27 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:29 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Splunk-UF [17/Sep/2026:03:36:30 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:03:36:34 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:36:37 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:39 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:40 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:42 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:44 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Splunk-UF [17/Sep/2026:03:36:47 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:36:49 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:36:53 +0000]: Process Create: conhost.exe on 10.0.63.5
+[CORE] Rogue AP beacon detected, SSID spoofing corporate network near 10.0.63.5.
+[CORE] [WIDS-ALERT] Evil-twin AP flagged near 10.0.63.5.
+[CORE] [CHANGE-MGMT] Maintenance window MW-5292 covers this activity through 06:00 UTC.
+[FILLER] Sysmon [17/Sep/2026:03:37:01 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:04 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:08 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:09 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:10 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Splunk-UF [17/Sep/2026:03:37:14 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:03:37:15 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:37:16 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:18 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Sysmon [17/Sep/2026:03:37:20 +0000]: Process Create: conhost.exe on 10.0.63.5
+[FILLER] Splunk-UF [17/Sep/2026:03:37:22 +0000]: Forwarding 90 events to indexer.
+[FILLER] Splunk-UF [17/Sep/2026:03:37:25 +0000]: Forwarding 90 events to indexer.
+[FILLER] Sysmon [17/Sep/2026:03:37:29 +0000]: Process Create: conhost.exe on 10.0.63.5

@@ -1,0 +1,40 @@
+[FILLER] Historian [15/Sep/2026:23:48:00 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:03 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:04 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:06 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:08 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:11 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:12 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:13 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:17 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:20 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:21 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:24 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:25 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:26 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:30 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:34 +0000]: Register read success on 10.0.63.5
+[CORE] SMBv1 MS17-010-class exploit payload targeting 10.0.63.5:445.
+[CORE] [IDS-ALERT] Worm lateral-movement attempt blocked near 10.0.63.5.
+[FILLER] Historian [15/Sep/2026:23:48:39 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:43 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:47 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:49 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:48:51 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:54 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:48:58 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:00 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:04 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:05 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:49:09 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:12 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:49:13 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:49:17 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:18 +0000]: Register read success on 10.0.63.5
+[FILLER] Historian [15/Sep/2026:23:49:19 +0000]: Tag_Update_Success - Node_10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:20 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:23 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:25 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:27 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:31 +0000]: Register read success on 10.0.63.5
+[FILLER] SCADA-Telemetry [15/Sep/2026:23:49:32 +0000]: Register read success on 10.0.63.5

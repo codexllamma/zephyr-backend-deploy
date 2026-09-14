@@ -1,0 +1,38 @@
+[FILLER] SQL-Audit [14/Sep/2026:12:12:00 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:12:03 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:12:06 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:12:10 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:12:11 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:12:12 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:12:16 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:12:17 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:12:19 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:21 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:12:24 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:12:26 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:12:27 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:12:29 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:12:33 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:12:36 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:40 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:43 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:46 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:50 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:12:51 +0000]: LOG duration: 3.1ms statement: COMMIT
+[CORE] Delete API call rejected by WORM lock on 10.0.30.6, retried 40x from 10.0.96.144.
+[CORE] [BACKUP-ALERT] Repeated deletion attempts against immutable vault 10.0.30.6.
+[FILLER] Postgres [14/Sep/2026:12:12:57 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:13:01 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:13:03 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:13:04 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:13:08 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:13:10 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:13:13 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:13:17 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] Postgres [14/Sep/2026:12:13:21 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:13:24 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:13:28 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] Postgres [14/Sep/2026:12:13:30 +0000]: LOG duration: 3.1ms statement: COMMIT
+[FILLER] SQL-Audit [14/Sep/2026:12:13:32 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:13:36 +0000]: SELECT * FROM status_table WHERE active=1
+[FILLER] SQL-Audit [14/Sep/2026:12:13:37 +0000]: SELECT * FROM status_table WHERE active=1

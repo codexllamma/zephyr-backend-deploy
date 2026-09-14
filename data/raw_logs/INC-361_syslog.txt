@@ -1,0 +1,36 @@
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:00 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:02 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:03 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:06 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:10 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:13 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:16 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:18 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:19 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:22 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:26 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:28 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:30 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:33 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:36 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:38 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:42 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:46 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:48 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[CORE] WMI process creation via wmic.exe /node:10.0.42.5 from 185.191.32.60
+[CORE] [EDR-ALERT] Remote WMI execution against 10.0.42.5.
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:53 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:00:57 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:00:58 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:01:00 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:01:03 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:04 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:06 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:10 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:01:12 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:13 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:14 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 185.191.32.60 - - [16/Sep/2026:12:01:15 +0000] Kerberos TGS-REQ: service/krbtgt@DOMAIN.LOCAL (Success)
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:19 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:23 +0000] LDAP Search Request: Base="DC=domain,DC=local"
+[FILLER] 10.0.42.5 - - [16/Sep/2026:12:01:25 +0000] LDAP Search Request: Base="DC=domain,DC=local"

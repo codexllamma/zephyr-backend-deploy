@@ -53,6 +53,17 @@ def defense_node(state: IncidentState) -> Dict[str, Any]:
         logger.error(f"[{state.incident_id}] Phase 2 Retrieval Failed: {str(e)}")
         history_context = ""
 
+    # --- AMNESIA FIX: HARD FEEDBACK INJECTION ---
+    # Forcefully append the RART rule if it was just generated in the last node step.
+    if state.learned_rule and state.learned_rule not in history_context:
+        history_context += f"\n[NEW CRITICAL RULE JUST LEARNED]: {state.learned_rule}"
+
+    # Do not trust state.reviewer_decision! Look for the tripwire text.
+    feedback_context = "None. First attempt."
+    if state.reviewer_feedback and "[REJECTED]" in state.reviewer_feedback:
+        feedback_context = f"CRITICAL SYSTEM WARNING: Your last proposed action ({state.proposed_action}) was REJECTED by the simulator. Reason: {state.reviewer_feedback}. YOU MUST CHOOSE A DIFFERENT ACTION ENUM (e.g., TARGETED_RULE, ISOLATE_ASSET) TO COMPLY WITH THE NEW RULE."
+        logger.warning(f"[{state.incident_id}] Tripwire detected! Injecting strict rejection feedback to break amnesia loop.")
+
     # --- Synthesis & Prompt Resolution ---
     prompt = ChatPromptTemplate.from_messages([
         ("system", """You are the Lead SOC Defense Architect.
@@ -75,9 +86,6 @@ def defense_node(state: IncidentState) -> Dict[str, Any]:
         Previous Reviewer Feedback: {feedback}
         """)
     ])
-    
-    # Inject feedback if this is a second-pass after a Reviewer rejection
-    feedback_context = state.reviewer_feedback if state.reviewer_decision == "REJECT" else "None. First attempt."
     
     logger.debug(f"[{state.incident_id}] Invoking LLM with structured DefensePlan constraints...")
     
@@ -113,8 +121,8 @@ def defense_node(state: IncidentState) -> Dict[str, Any]:
         # Safe fallback to prevent system crash
         return {
             "status": "DEFENDING",
-            "proposed_action": "ISOLATE_ASSET",
-            "proposed_target": state.target_ip,
+            "proposed_action": "TARGETED_RULE",
+            "proposed_target": state.source_ip,
             "action_justification": "Fallback strategy activated due to inference failure.",
-            "messages": [AIMessage(content="Defense Strategy: SYSTEM FAILURE. Defaulting to victim isolation.")]
+            "messages": [AIMessage(content="Defense Strategy: SYSTEM FAILURE. Defaulting to targeted rule mitigation.")]
         }

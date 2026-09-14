@@ -7,7 +7,7 @@ from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-# Note: This import will resolve fully once we generate Batch 6 (orchestrator.py)
+# Note: This import resolves to your built orchestrator
 from app.graph.orchestrator import soc_graph
 from app.core.state import IncidentState
 
@@ -27,7 +27,7 @@ app = FastAPI(
 # Standard CORS for Next.js / React frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Restrict this in production
+    allow_origins=["*"],  # Restrict this to your Vercel domain in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -74,19 +74,19 @@ async def stream_incident_response(request: AttackSimulationRequest):
             # 2. Asynchronous Graph Execution Stream (LangChain v2 API)
             async for event in soc_graph.astream_events(initial_state, version="v2"):
                 kind = event["event"]
-                node_name = event.get("name", "unknown")
                 
-                # We filter specifically for node completions to provide clean UI updates
-                if kind == "on_chain_end" and node_name not in ["LangGraph", "system"]:
-                    
-                    # Extract the dictionary of state mutations emitted by this node
+                # Use metadata to reliably isolate primary LangGraph nodes, ignoring internal chains
+                langgraph_node = event.get("metadata", {}).get("langgraph_node")
+                
+                if kind == "on_chain_end" and langgraph_node:
                     output_data = event.get("data", {}).get("output", {})
+                    
                     if not isinstance(output_data, dict):
                         continue
                         
                     # Build a highly verbose payload for the UI
                     payload = {
-                        "node": node_name,
+                        "node": langgraph_node,
                         "status": "completed",
                         "internal_status_flag": output_data.get("status", "PROCESSING"),
                         "action_proposed": output_data.get("proposed_action", None),
@@ -99,7 +99,7 @@ async def stream_incident_response(request: AttackSimulationRequest):
                         "execution_result": output_data.get("execution_result", None)
                     }
                     
-                    logger.info(f"Streaming Node Completion: {node_name} | Status: {payload['internal_status_flag']}")
+                    logger.info(f"Streaming Node Completion: {langgraph_node} | Status: {payload['internal_status_flag']}")
                     yield f"data: {json.dumps(payload)}\n\n"
                     
                     # Small artificial delay to allow UI animations to breathe
@@ -122,7 +122,16 @@ async def stream_incident_response(request: AttackSimulationRequest):
             }
             yield f"data: {json.dumps(error_payload)}\n\n"
 
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    # StreamingResponse with strict headers to disable proxy/Cloudflare buffering
+    return StreamingResponse(
+        event_generator(), 
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no"
+        }
+    )
 
 if __name__ == "__main__":
     import uvicorn
